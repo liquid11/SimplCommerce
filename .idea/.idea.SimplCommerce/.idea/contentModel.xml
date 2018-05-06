@@ -1,0 +1,2403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\admins\.Rider2017.3\system\resharper-host\local\Transient\ReSharperHost\v11\SolutionCaches\_SimplCommerce.-560691013.00" t="ExcludeRecursive" />
+    <e p="C:\Users\admins\Documents\projects\SimplCommerce" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="SimplCommerce.sln" t="IncludeFlat" />
+      <e p="Solution Items" t="Include" />
+      <e p="src" t="Include">
+        <e p="Database" t="Include">
+          <e p="StaticData.sql" t="Include" />
+          <e p="StaticData_MySql.sql" t="Include" />
+          <e p="StaticData_PostgreSQL.sql" t="Include" />
+          <e p="StaticData_SQLite.sql" t="Include" />
+        </e>
+        <e p="Modules" t="Include">
+          <e p="SimplCommerce.Module.ActivityLog" t="IncludeRecursive">
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="Controllers" t="Include">
+              <e p="MostViewedEntityController.cs" t="Include" />
+            </e>
+            <e p="Data" t="Include">
+              <e p="ActivityRepository.cs" t="Include" />
+              <e p="IActivityTypeRepository.cs" t="Include" />
+            </e>
+            <e p="Events" t="Include">
+              <e p="EntityViewedHandler.cs" t="Include" />
+            </e>
+            <e p="Models" t="Include">
+              <e p="Activity.cs" t="Include" />
+              <e p="ActivityType.cs" t="Include" />
+              <e p="MostViewEntityDto.cs" t="Include" />
+            </e>
+            <e p="module.json" t="Include" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.0" t="Include">
+                  <e p="SimplCommerce.Module.ActivityLog.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="SimplCommerce.Module.ActivityLog.csproj" t="IncludeRecursive" />
+            <e p="wwwroot" t="Include">
+              <e p="admin" t="Include">
+                <e p="activitylog-service.js" t="Include" />
+                <e p="activitylog.module.js" t="Include" />
+                <e p="most-viewed-products.directive.html" t="Include" />
+                <e p="most-viewed-products.directive.js" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="SimplCommerce.Module.Catalog" t="IncludeRecursive">
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="Components" t="Include">
+              <e p="CategoryBreadcrumbViewComponent.cs" t="Include" />
+              <e p="CategoryMenuViewComponent.cs" t="Include" />
+              <e p="CategoryWidgetViewComponent.cs" t="Include" />
+              <e p="ProductWidgetViewComponent.cs" t="Include" />
+            </e>
+            <e p="Controllers" t="Include">
+              <e p="BrandApiController.cs" t="Include" />
+              <e p="BrandController.cs" t="Include" />
+              <e p="CategoryApiController.cs" t="Include" />
+              <e p="CategoryController.cs" t="Include" />
+              <e p="CategoryWidgetApiController.cs" t="Include" />
+              <e p="ProductApiController.cs" t="Include" />
+              <e p="ProductAttributeApiController.cs" t="Include" />
+              <e p="ProductAttributeGroupApiController.cs" t="Include" />
+              <e p="ProductController.cs" t="Include" />
+              <e p="ProductOptionApiController.cs" t="Include" />
+              <e p="ProductTemplateApiController.cs" t="Include" />
+              <e p="ProductWidgetApiController.cs" t="Include" />
+            </e>
+            <e p="Data" t="Include">
+              <e p="CatalogCustomModelBuilder.cs" t="Include" />
+              <e p="IProductTemplateProductAttributeRepository.cs" t="Include" />
+              <e p="ProductTemplateProductAttributeRepository.cs" t="Include" />
+            </e>
+            <e p="Events" t="Include">
+              <e p="ReviewSummaryChangedHandler.cs" t="Include" />
+            </e>
+            <e p="Models" t="Include">
+              <e p="Brand.cs" t="Include" />
+              <e p="CalculatedProductPrice.cs" t="Include" />
+              <e p="Category.cs" t="Include" />
+              <e p="Product.cs" t="Include" />
+              <e p="ProductAttribute.cs" t="Include" />
+              <e p="ProductAttributeGroup.cs" t="Include" />
+              <e p="ProductAttributeValue.cs" t="Include" />
+              <e p="ProductCategory.cs" t="Include" />
+              <e p="ProductLink.cs" t="Include" />
+              <e p="ProductLinkType.cs" t="Include" />
+              <e p="ProductMedia.cs" t="Include" />
+              <e p="ProductOption.cs" t="Include" />
+              <e p="ProductOptionCombination.cs" t="Include" />
+              <e p="ProductOptionValue.cs" t="Include" />
+              <e p="ProductTemplate.cs" t="Include" />
+              <e p="ProductTemplateProductAttribute.cs" t="Include" />
+            </e>
+            <e p="module.json" t="Include" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.0" t="Include">
+                  <e p="SimplCommerce.Module.Catalog.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Services" t="Include">
+              <e p="BrandService.cs" t="Include" />
+              <e p="CategoryService.cs" t="Include" />
+              <e p="IBrandService.cs" t="Include" />
+              <e p="ICategoryService.cs" t="Include" />
+              <e p="IProductPricingService.cs" t="Include" />
+              <e p="IProductService.cs" t="Include" />
+              <e p="ProductPricingService.cs" t="Include" />
+              <e p="ProductService.cs" t="Include" />
+            </e>
+            <e p="SimplCommerce.Module.Catalog.csproj" t="IncludeRecursive" />
+            <e p="ViewModels" t="Include">
+              <e p="BrandForm.cs" t="Include" />
+              <e p="CategoryForm.cs" t="Include" />
+              <e p="CategoryListItem.cs" t="Include" />
+              <e p="CategoryMenuItem.cs" t="Include" />
+              <e p="CategoryThumbnail.cs" t="Include" />
+              <e p="CategoryWidgetComponentVm.cs" t="Include" />
+              <e p="CategoryWidgetForm.cs" t="Include" />
+              <e p="CategoryWidgetSettings.cs" t="Include" />
+              <e p="FilterBrand.cs" t="Include" />
+              <e p="FilterCategory.cs" t="Include" />
+              <e p="FilterOption.cs" t="Include" />
+              <e p="FilterPrice.cs" t="Include" />
+              <e p="ProductAttributeFormVm.cs" t="Include" />
+              <e p="ProductAttributeGroupFormVm.cs" t="Include" />
+              <e p="ProductAttributeVm.cs" t="Include" />
+              <e p="ProductCategoryForm.cs" t="Include" />
+              <e p="ProductDetail.cs" t="Include" />
+              <e p="ProductDetailAttribute.cs" t="Include" />
+              <e p="ProductDetailCategory.cs" t="Include" />
+              <e p="ProductDetailOption.cs" t="Include" />
+              <e p="ProductDetailVariation.cs" t="Include" />
+              <e p="ProductDetailVariationOption.cs" t="Include" />
+              <e p="ProductForm.cs" t="Include" />
+              <e p="ProductLinkVm.cs" t="Include" />
+              <e p="ProductListItem.cs" t="Include" />
+              <e p="ProductMediaVm.cs" t="Include" />
+              <e p="ProductOptionCombinationVm.cs" t="Include" />
+              <e p="ProductOptionDisplay.cs" t="Include" />
+              <e p="ProductOptionFormVm.cs" t="Include" />
+              <e p="ProductOptionValueVm.cs" t="Include" />
+              <e p="ProductOptionVm.cs" t="Include" />
+              <e p="ProductsByBrand.cs" t="Include" />
+              <e p="ProductsByCategory.cs" t="Include" />
+              <e p="ProductTemplateFrom.cs" t="Include" />
+              <e p="ProductThumbnail.cs" t="Include" />
+              <e p="ProductVariationVm.cs" t="Include" />
+              <e p="ProductVm.cs" t="Include" />
+              <e p="ProductWidgetComponentVm.cs" t="Include" />
+              <e p="ProductWidgetForm.cs" t="Include" />
+              <e p="ProductWidgetOrderBy.cs" t="Include" />
+              <e p="ProductWidgetSetting.cs" t="Include" />
+              <e p="SearchOption.cs" t="Include" />
+            </e>
+            <e p="Views" t="Include">
+              <e p="_ViewImports.cshtml" t="Include" />
+              <e p="_ViewStart.cshtml" t="Include" />
+              <e p="Brand" t="Include">
+                <e p="BrandDetail.cshtml" t="Include" />
+              </e>
+              <e p="Category" t="Include">
+                <e p="CategoryDetail.cshtml" t="Include" />
+              </e>
+              <e p="Components" t="Include">
+                <e p="CategoryBreadcrumb.cshtml" t="Include" />
+                <e p="CategoryMenu.cshtml" t="Include" />
+                <e p="CategoryWidget.cshtml" t="Include" />
+                <e p="ProductWidget.cshtml" t="Include" />
+              </e>
+              <e p="Product" t="Include">
+                <e p="ProductDetail.cshtml" t="Include" />
+              </e>
+              <e p="Shared" t="Include">
+                <e p="_ProductThumbnail.cshtml" t="Include" />
+              </e>
+            </e>
+            <e p="wwwroot" t="Include">
+              <e p="admin" t="Include">
+                <e p="Brand" t="Include">
+                  <e p="brand-form.html" t="Include" />
+                  <e p="brand-form.js" t="Include" />
+                  <e p="brand-list.html" t="Include" />
+                  <e p="brand-list.js" t="Include" />
+                  <e p="brand-service.js" t="Include" />
+                </e>
+                <e p="catalog.module.js" t="Include" />
+                <e p="Category" t="Include">
+                  <e p="category-form.html" t="Include" />
+                  <e p="category-form.js" t="Include" />
+                  <e p="category-list.html" t="Include" />
+                  <e p="category-list.js" t="Include" />
+                  <e p="category-service.js" t="Include" />
+                </e>
+                <e p="category-widget" t="Include">
+                  <e p="category-widget-form.html" t="Include" />
+                  <e p="category-widget-form.js" t="Include" />
+                  <e p="category-widget-service.js" t="Include" />
+                </e>
+                <e p="Product" t="Include">
+                  <e p="product-form.html" t="Include" />
+                  <e p="product-form.js" t="Include" />
+                  <e p="product-list.html" t="Include" />
+                  <e p="product-list.js" t="Include" />
+                  <e p="product-option-display-directive.html" t="Include" />
+                  <e p="product-option-display-directive.js" t="Include" />
+                  <e p="product-selection-directive.html" t="Include" />
+                  <e p="product-selection-directive.js" t="Include" />
+                  <e p="product-service.js" t="Include" />
+                </e>
+                <e p="product-attribute" t="Include">
+                  <e p="product-attribute-form.html" t="Include" />
+                  <e p="product-attribute-form.js" t="Include" />
+                  <e p="product-attribute-list.html" t="Include" />
+                  <e p="product-attribute-list.js" t="Include" />
+                  <e p="product-attribute-service.js" t="Include" />
+                </e>
+                <e p="product-attribute-group" t="Include">
+                  <e p="product-attribute-group-form.html" t="Include" />
+                  <e p="product-attribute-group-form.js" t="Include" />
+                  <e p="product-attribute-group-list.html" t="Include" />
+                  <e p="product-attribute-group-list.js" t="Include" />
+                  <e p="product-attribute-group-service.js" t="Include" />
+                </e>
+                <e p="product-option" t="Include">
+                  <e p="product-option-form.html" t="Include" />
+                  <e p="product-option-form.js" t="Include" />
+                  <e p="product-option-list.html" t="Include" />
+                  <e p="product-option-list.js" t="Include" />
+                  <e p="product-option-service.js" t="Include" />
+                </e>
+                <e p="product-template" t="Include">
+                  <e p="product-template-form.html" t="Include" />
+                  <e p="product-template-form.js" t="Include" />
+                  <e p="product-template-list.html" t="Include" />
+                  <e p="product-template-list.js" t="Include" />
+                  <e p="product-template-service.js" t="Include" />
+                </e>
+                <e p="product-widget" t="Include">
+                  <e p="product-widget-form.html" t="Include" />
+                  <e p="product-widget-form.js" t="Include" />
+                  <e p="product-widget-service.js" t="Include" />
+                </e>
+              </e>
+              <e p="product-detail.css" t="Include" />
+              <e p="product-detail.js" t="Include" />
+              <e p="product-filter.js" t="Include" />
+            </e>
+          </e>
+          <e p="SimplCommerce.Module.Cms" t="IncludeRecursive">
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="Components" t="Include">
+              <e p="CarouselWidgetViewComponent.cs" t="Include" />
+              <e p="MenuViewComponent.cs" t="Include" />
+              <e p="SpaceBarWidgetViewComponent.cs" t="Include" />
+            </e>
+            <e p="Controllers" t="Include">
+              <e p="CarouselWidgetApiController.cs" t="Include" />
+              <e p="HtmlWidgetApiController.cs" t="Include" />
+              <e p="MenuApiController.cs" t="Include" />
+              <e p="PageApiController.cs" t="Include" />
+              <e p="PageController.cs" t="Include" />
+              <e p="SpaceBarWidgetApiContorller.cs" t="Include" />
+            </e>
+            <e p="Events" t="Include">
+              <e p="EntityDeletingHandler.cs" t="Include" />
+            </e>
+            <e p="Models" t="Include">
+              <e p="Menu.cs" t="Include" />
+              <e p="MenuItem.cs" t="Include" />
+              <e p="Page.cs" t="Include" />
+            </e>
+            <e p="module.json" t="Include" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.0" t="Include">
+                  <e p="SimplCommerce.Module.Cms.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Services" t="Include">
+              <e p="IPageService.cs" t="Include" />
+              <e p="PageService.cs" t="Include" />
+            </e>
+            <e p="SimplCommerce.Module.Cms.csproj" t="IncludeRecursive" />
+            <e p="ViewModels" t="Include">
+              <e p="CarouselWidgetForm.cs" t="Include" />
+              <e p="CarouselWidgetItemForm.cs" t="Include" />
+              <e p="CarouselWidgetViewComponentItemVm.cs" t="Include" />
+              <e p="CarouselWidgetViewComponentVm.cs" t="Include" />
+              <e p="HtmlWidgetForm.cs" t="Include" />
+              <e p="MenuForm.cs" t="Include" />
+              <e p="MenuItemForm.cs" t="Include" />
+              <e p="MenuItemVm.cs" t="Include" />
+              <e p="PageForm.cs" t="Include" />
+              <e p="SpaceBarWidgetComponentVm.cs" t="Include" />
+              <e p="SpaceBarWidgetForm.cs" t="Include" />
+              <e p="SpaceBarWidgetSetting.cs" t="Include" />
+            </e>
+            <e p="Views" t="Include">
+              <e p="_ViewImports.cshtml" t="Include" />
+              <e p="_ViewStart.cshtml" t="Include" />
+              <e p="Components" t="Include">
+                <e p="CarouselWidget.cshtml" t="Include" />
+                <e p="Menu.cshtml" t="Include" />
+                <e p="SpaceBarWidget.cshtml" t="Include" />
+              </e>
+              <e p="Page" t="Include">
+                <e p="PageDetail.cshtml" t="Include" />
+              </e>
+            </e>
+            <e p="wwwroot" t="Include">
+              <e p="admin" t="Include">
+                <e p="carousel-widget" t="Include">
+                  <e p="carousel-widget-form.html" t="Include" />
+                  <e p="carousel-widget-form.js" t="Include" />
+                  <e p="carousel-widget-service.js" t="Include" />
+                </e>
+                <e p="cms.module.js" t="Include" />
+                <e p="html-widget" t="Include">
+                  <e p="html-widget-form.html" t="Include" />
+                  <e p="html-widget-form.js" t="Include" />
+                  <e p="html-widget-service.js" t="Include" />
+                </e>
+                <e p="menu" t="Include">
+                  <e p="menu-form-create.html" t="Include" />
+                  <e p="menu-form-create.js" t="Include" />
+                  <e p="menu-form.html" t="Include" />
+                  <e p="menu-form.js" t="Include" />
+                  <e p="menu-list.html" t="Include" />
+                  <e p="menu-list.js" t="Include" />
+                  <e p="menu-service.js" t="Include" />
+                </e>
+                <e p="Page" t="Include">
+                  <e p="page-form.html" t="Include" />
+                  <e p="page-form.js" t="Include" />
+                  <e p="page-list.html" t="Include" />
+                  <e p="page-list.js" t="Include" />
+                  <e p="page-service.js" t="Include" />
+                </e>
+                <e p="spacebar-widget" t="Include">
+                  <e p="spacebar-widget-form.html" t="Include" />
+                  <e p="spacebar-widget-form.js" t="Include" />
+                  <e p="spacebar-widget-service.js" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="SimplCommerce.Module.Contacts" t="IncludeRecursive">
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="Controllers" t="Include">
+              <e p="ContactApiController.cs" t="Include" />
+              <e p="ContactAreaApiController.cs" t="Include" />
+              <e p="ContactController.cs" t="Include" />
+            </e>
+            <e p="Models" t="Include">
+              <e p="Contact.cs" t="Include" />
+              <e p="ContactArea.cs" t="Include" />
+            </e>
+            <e p="module.json" t="Include" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.0" t="Include">
+                  <e p="SimplCommerce.Module.Contacts.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="SimplCommerce.Module.Contacts.csproj" t="IncludeRecursive" />
+            <e p="ViewModels" t="Include">
+              <e p="CompanyInformation.cs" t="Include" />
+              <e p="ContactAreaForm.cs" t="Include" />
+              <e p="ContactAreaVm.cs" t="Include" />
+              <e p="ContactForm.cs" t="Include" />
+              <e p="ContactVm.cs" t="Include" />
+            </e>
+            <e p="Views" t="Include">
+              <e p="_ViewImports.cshtml" t="Include" />
+              <e p="_ViewStart.cshtml" t="Include" />
+              <e p="Contact" t="Include">
+                <e p="Index.cshtml" t="Include" />
+                <e p="SubmitContactResult.cshtml" t="Include" />
+              </e>
+            </e>
+            <e p="wwwroot" t="Include">
+              <e p="admin" t="Include">
+                <e p="contact-area" t="Include">
+                  <e p="contact-area-form.html" t="Include" />
+                  <e p="contact-area-form.js" t="Include" />
+                  <e p="contact-area-list.html" t="Include" />
+                  <e p="contact-area-list.js" t="Include" />
+                  <e p="contact-area-service.js" t="Include" />
+                </e>
+                <e p="contacts" t="Include">
+                  <e p="contact-list.html" t="Include" />
+                  <e p="contact-list.js" t="Include" />
+                  <e p="contact-service.js" t="Include" />
+                  <e p="contact.html" t="Include" />
+                  <e p="contact.js" t="Include" />
+                </e>
+                <e p="contacts.module.js" t="Include" />
+              </e>
+              <e p="init-google-map.js" t="Include" />
+            </e>
+          </e>
+          <e p="SimplCommerce.Module.Core" t="IncludeRecursive">
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="Components" t="Include">
+              <e p="DefaultShippingAddressViewComponent.cs" t="Include" />
+            </e>
+            <e p="Controllers" t="Include">
+              <e p="AccountController.cs" t="Include" />
+              <e p="AppSettingApiController.cs" t="Include" />
+              <e p="CommonApiController.cs" t="Include" />
+              <e p="CountryApiController.cs" t="Include" />
+              <e p="CustomerGroupApiController.cs" t="Include" />
+              <e p="DashboardController.cs" t="Include" />
+              <e p="DistrictApiController.cs" t="Include" />
+              <e p="EntityApiController.cs" t="Include" />
+              <e p="EntityTypeApiController.cs" t="Include" />
+              <e p="HomeAdminController.cs" t="Include" />
+              <e p="HomeController.cs" t="Include" />
+              <e p="ManageController.cs" t="Include" />
+              <e p="RoleApiController.cs" t="Include" />
+              <e p="StateOrProvinceApiController.cs" t="Include" />
+              <e p="ThemeApiController.cs" t="Include" />
+              <e p="UserAddressController.cs" t="Include" />
+              <e p="UserApiController.cs" t="Include" />
+              <e p="WidgetApiController.cs" t="Include" />
+              <e p="WidgetInstanceApiController.cs" t="Include" />
+              <e p="WidgetZoneApiController.cs" t="Include" />
+            </e>
+            <e p="Data" t="Include">
+              <e p="CoreCustomModelBuilder.cs" t="Include" />
+              <e p="Repository.cs" t="Include" />
+              <e p="RepositoryWithTypedId.cs" t="Include" />
+              <e p="SimplDbContext.cs" t="Include" />
+            </e>
+            <e p="Events" t="Include">
+              <e p="EntityDeleting.cs" t="Include" />
+              <e p="EntityViewed.cs" t="Include" />
+              <e p="ReviewSummaryChanged.cs" t="Include" />
+              <e p="UserSignedIn.cs" t="Include" />
+            </e>
+            <e p="Extensions" t="Include">
+              <e p="EFConfigProvider.cs" t="Include" />
+              <e p="EFConfigSource.cs" t="Include" />
+              <e p="EFConfigurationDbContext.cs" t="Include" />
+              <e p="EFConfigurationProviderExtension.cs" t="Include" />
+              <e p="IWorkContext.cs" t="Include" />
+              <e p="SimplRoleStore.cs" t="Include" />
+              <e p="SimplSignInManager.cs" t="Include" />
+              <e p="SimplUserStore.cs" t="Include" />
+              <e p="TagHelpers" t="Include">
+                <e p="AppendVersionTagHelper.cs" t="Include" />
+              </e>
+              <e p="UrlSlugRoute.cs" t="Include" />
+              <e p="WorkContext.cs" t="Include" />
+            </e>
+            <e p="Models" t="Include">
+              <e p="Address.cs" t="Include" />
+              <e p="AddressType.cs" t="Include" />
+              <e p="AppSetting.cs" t="Include" />
+              <e p="Content.cs" t="Include" />
+              <e p="Country.cs" t="Include" />
+              <e p="CustomerGroup.cs" t="Include" />
+              <e p="District.cs" t="Include" />
+              <e p="Entity.cs" t="Include" />
+              <e p="EntityType.cs" t="Include" />
+              <e p="Media.cs" t="Include" />
+              <e p="MediaType.cs" t="Include" />
+              <e p="Role.cs" t="Include" />
+              <e p="SimplConstants.cs" t="Include" />
+              <e p="StateOrProvince.cs" t="Include" />
+              <e p="ThemeManifest.cs" t="Include" />
+              <e p="User.cs" t="Include" />
+              <e p="UserAddress.cs" t="Include" />
+              <e p="UserCustomerGroup.cs" t="Include" />
+              <e p="UserRole.cs" t="Include" />
+              <e p="Vendor.cs" t="Include" />
+              <e p="Widget.cs" t="Include" />
+              <e p="WidgetInstance.cs" t="Include" />
+              <e p="WidgetZone.cs" t="Include" />
+              <e p="WidgetZoneIds.cs" t="Include" />
+            </e>
+            <e p="module.json" t="Include" />
+            <e p="ModuleInitializer.cs" t="Include" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.0" t="Include">
+                  <e p="SimplCommerce.Module.Core.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Services" t="Include">
+              <e p="EntityService.cs" t="Include" />
+              <e p="IEmailSender.cs" t="Include" />
+              <e p="IEntityService.cs" t="Include" />
+              <e p="IMediaService.cs" t="Include" />
+              <e p="ISmsSender.cs" t="Include" />
+              <e p="IStorageService.cs" t="Include" />
+              <e p="IThemeService.cs" t="Include" />
+              <e p="IWidgetInstanceService.cs" t="Include" />
+              <e p="MediaService.cs" t="Include" />
+              <e p="SmsSender.cs" t="Include" />
+              <e p="ThemeService.cs" t="Include" />
+              <e p="WidgetInstanceService.cs" t="Include" />
+            </e>
+            <e p="SimplCommerce.Module.Core.csproj" t="IncludeRecursive" />
+            <e p="ViewModels" t="Include">
+              <e p="Account" t="Include">
+                <e p="ExternalLoginConfirmationViewModel.cs" t="Include" />
+                <e p="ForgotPasswordViewModel.cs" t="Include" />
+                <e p="LoginViewModel.cs" t="Include" />
+                <e p="RegisterViewModel.cs" t="Include" />
+                <e p="ResetPasswordViewModel.cs" t="Include" />
+                <e p="SendCodeViewModel.cs" t="Include" />
+                <e p="VerifyCodeViewModel.cs" t="Include" />
+              </e>
+              <e p="BreadcrumbViewModel.cs" t="Include" />
+              <e p="CountryForm.cs" t="Include" />
+              <e p="CustomerGroupForm.cs" t="Include" />
+              <e p="HomeViewModel.cs" t="Include" />
+              <e p="Manage" t="Include">
+                <e p="AddPhoneNumberViewModel.cs" t="Include" />
+                <e p="ChangePasswordViewModel.cs" t="Include" />
+                <e p="ConfigureTwoFactorViewModel.cs" t="Include" />
+                <e p="DefaultAddressViewComponentVm.cs" t="Include" />
+                <e p="FactorViewModel.cs" t="Include" />
+                <e p="IndexViewModel.cs" t="Include" />
+                <e p="ManageLoginsViewModel.cs" t="Include" />
+                <e p="RemoveLoginViewModel.cs" t="Include" />
+                <e p="SetPasswordViewModel.cs" t="Include" />
+                <e p="UserInfoVm.cs" t="Include" />
+                <e p="VerifyPhoneNumberViewModel.cs" t="Include" />
+              </e>
+              <e p="MediaViewModel.cs" t="Include" />
+              <e p="StateOrProvinceForm.cs" t="Include" />
+              <e p="ThemeListItem.cs" t="Include" />
+              <e p="UserAddressFormViewModel.cs" t="Include" />
+              <e p="UserAddressListItem.cs" t="Include" />
+              <e p="UserForm.cs" t="Include" />
+              <e p="WidgetFormBase.cs" t="Include" />
+              <e p="WidgetInstanceViewModel.cs" t="Include" />
+            </e>
+            <e p="Views" t="Include">
+              <e p="_ViewImports.cshtml" t="Include" />
+              <e p="_ViewStart.cshtml" t="Include" />
+              <e p="Account" t="Include">
+                <e p="AccessDenied.cshtml" t="Include" />
+                <e p="ConfirmEmail.cshtml" t="Include" />
+                <e p="ExternalLoginConfirmation.cshtml" t="Include" />
+                <e p="ExternalLoginFailure.cshtml" t="Include" />
+                <e p="ForgotPassword.cshtml" t="Include" />
+                <e p="ForgotPasswordConfirmation.cshtml" t="Include" />
+                <e p="Lockout.cshtml" t="Include" />
+                <e p="Login.cshtml" t="Include" />
+                <e p="Register.cshtml" t="Include" />
+                <e p="ResetPassword.cshtml" t="Include" />
+                <e p="ResetPasswordConfirmation.cshtml" t="Include" />
+                <e p="SendCode.cshtml" t="Include" />
+                <e p="VerifyCode.cshtml" t="Include" />
+              </e>
+              <e p="Components" t="Include">
+                <e p="DefaultShippingAddress.cshtml" t="Include" />
+              </e>
+              <e p="Dashboard" t="Include">
+                <e p="HomeTemplate.cshtml" t="Include" />
+              </e>
+              <e p="Home" t="Include">
+                <e p="Index.cshtml" t="Include" />
+              </e>
+              <e p="HomeAdmin" t="Include">
+                <e p="Index.cshtml" t="Include" />
+              </e>
+              <e p="Manage" t="Include">
+                <e p="ChangePassword.cshtml" t="Include" />
+                <e p="Index.cshtml" t="Include" />
+                <e p="ManageLogins.cshtml" t="Include" />
+                <e p="SetPassword.cshtml" t="Include" />
+                <e p="UserInfo.cshtml" t="Include" />
+              </e>
+              <e p="Shared" t="Include">
+                <e p="_WidgetInstances.cshtml" t="Include" />
+              </e>
+              <e p="UserAddress" t="Include">
+                <e p="_AddressForm.cshtml" t="Include" />
+                <e p="Create.cshtml" t="Include" />
+                <e p="Edit.cshtml" t="Include" />
+                <e p="List.cshtml" t="Include" />
+              </e>
+            </e>
+            <e p="wwwroot" t="Include">
+              <e p="admin" t="Include">
+                <e p="admin-app.js" t="Include" />
+                <e p="admin-core.css" t="Include" />
+                <e p="common" t="Include">
+                  <e p="common.js" t="Include" />
+                  <e p="exception.js" t="Include" />
+                  <e p="logger.js" t="Include" />
+                  <e p="slugify.js" t="Include" />
+                  <e p="st-date-range.html" t="Include" />
+                  <e p="st-date-range.js" t="Include" />
+                  <e p="summernote-service.js" t="Include" />
+                  <e p="translation-service.js" t="Include" />
+                </e>
+                <e p="configuration" t="Include">
+                  <e p="configuration-service.js" t="Include" />
+                  <e p="configuration.html" t="Include" />
+                  <e p="configuration.js" t="Include" />
+                </e>
+                <e p="core.module.js" t="Include" />
+                <e p="countries" t="Include">
+                  <e p="country-form.html" t="Include" />
+                  <e p="country-form.js" t="Include" />
+                  <e p="country-list.html" t="Include" />
+                  <e p="country-list.js" t="Include" />
+                  <e p="country-service.js" t="Include" />
+                </e>
+                <e p="customergroups" t="Include">
+                  <e p="customergroup-form.html" t="Include" />
+                  <e p="customergroup-form.js" t="Include" />
+                  <e p="customergroup-list.html" t="Include" />
+                  <e p="customergroup-list.js" t="Include" />
+                  <e p="customergroup-service.js" t="Include" />
+                </e>
+                <e p="Dashboard" t="Include">
+                  <e p="dashboard.module.js" t="Include" />
+                </e>
+                <e p="stateprovince" t="Include">
+                  <e p="state-province-form.html" t="Include" />
+                  <e p="state-province-form.js" t="Include" />
+                  <e p="state-province-list.html" t="Include" />
+                  <e p="state-province-list.js" t="Include" />
+                  <e p="state-province-service.js" t="Include" />
+                </e>
+                <e p="themes" t="Include">
+                  <e p="theme-list.html" t="Include" />
+                  <e p="theme-list.js" t="Include" />
+                  <e p="theme-service.js" t="Include" />
+                </e>
+                <e p="user" t="Include">
+                  <e p="user-form.html" t="Include" />
+                  <e p="user-form.js" t="Include" />
+                  <e p="user-list.html" t="Include" />
+                  <e p="user-list.js" t="Include" />
+                  <e p="user-service.js" t="Include" />
+                </e>
+                <e p="widget" t="Include">
+                  <e p="widget-instance-list.html" t="Include" />
+                  <e p="widget-instance-list.js" t="Include" />
+                  <e p="widget-service.js" t="Include" />
+                </e>
+              </e>
+              <e p="Logo_SimplCommerce.png" t="Include" />
+              <e p="main.js" t="Include" />
+              <e p="site.css" t="Include" />
+              <e p="site.min.css" t="Include" />
+              <e p="user-address.js" t="Include" />
+            </e>
+          </e>
+          <e p="SimplCommerce.Module.EmailSenderSendgrid" t="IncludeRecursive">
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="EmailSender.cs" t="Include" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.0" t="Include">
+                  <e p="SimplCommerce.Module.EmailSenderSendgrid.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="SimplCommerce.Module.EmailSenderSendgrid.csproj" t="IncludeRecursive" />
+          </e>
+          <e p="SimplCommerce.Module.EmailSenderSmtp" t="IncludeRecursive">
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="EmailConfig.cs" t="Include" />
+            <e p="EmailSender.cs" t="Include" />
+            <e p="module.json" t="Include" />
+            <e p="ModuleInitializer.cs" t="Include" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.0" t="Include">
+                  <e p="SimplCommerce.Module.EmailSenderSmtp.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="SimplCommerce.Module.EmailSenderSmtp.csproj" t="IncludeRecursive" />
+          </e>
+          <e p="SimplCommerce.Module.Inventory" t="IncludeRecursive">
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="Controllers" t="Include">
+              <e p="StockApiController.cs" t="Include" />
+              <e p="WarehouseApiController.cs" t="Include" />
+            </e>
+            <e p="Models" t="Include">
+              <e p="Stock.cs" t="Include" />
+              <e p="StockHistory.cs" t="Include" />
+              <e p="Warehouse.cs" t="Include" />
+            </e>
+            <e p="module.json" t="Include" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.0" t="Include">
+                  <e p="SimplCommerce.Module.Inventory.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Services" t="Include">
+              <e p="IStockService.cs" t="Include" />
+              <e p="StockService.cs" t="Include" />
+              <e p="StockUpdateRequest.cs" t="Include" />
+            </e>
+            <e p="SimplCommerce.Module.Inventory.csproj" t="IncludeRecursive" />
+            <e p="ViewModels" t="Include">
+              <e p="StockVm.cs" t="Include" />
+              <e p="WarehouseVm.cs" t="Include" />
+            </e>
+            <e p="wwwroot" t="Include">
+              <e p="admin" t="Include">
+                <e p="inventory.module.js" t="Include" />
+                <e p="stock" t="Include">
+                  <e p="stock-form.html" t="Include" />
+                  <e p="stock-form.js" t="Include" />
+                  <e p="stock-service.js" t="Include" />
+                </e>
+                <e p="warehouse" t="Include">
+                  <e p="warehouse-form.html" t="Include" />
+                  <e p="warehouse-form.js" t="Include" />
+                  <e p="warehouse-list.html" t="Include" />
+                  <e p="warehouse-list.js" t="Include" />
+                  <e p="warehouse-service.js" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="SimplCommerce.Module.Localization" t="IncludeRecursive">
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="Controllers" t="Include">
+              <e p="LocalizationApiController.cs" t="Include" />
+              <e p="LocalizationController.cs" t="Include" />
+            </e>
+            <e p="EFStringLocalizer.cs" t="Include" />
+            <e p="EFStringLocalizerFactory.cs" t="Include" />
+            <e p="EFStringLocalizerOfT.cs" t="Include" />
+            <e p="Models" t="Include">
+              <e p="Culture.cs" t="Include" />
+              <e p="Resource.cs" t="Include" />
+            </e>
+            <e p="module.json" t="Include" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.0" t="Include">
+                  <e p="SimplCommerce.Module.Localization.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="ResourceString.cs" t="Include" />
+            <e p="SimplCommerce.Module.Localization.csproj" t="IncludeRecursive" />
+            <e p="ViewModel" t="Include">
+              <e p="ResourceItemVm.cs" t="Include" />
+            </e>
+            <e p="wwwroot" t="Include">
+              <e p="admin" t="Include">
+                <e p="localization" t="Include">
+                  <e p="localization-form.html" t="Include" />
+                  <e p="localization-form.js" t="Include" />
+                  <e p="localization-service.js" t="Include" />
+                </e>
+                <e p="localization.module.js" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="SimplCommerce.Module.News" t="IncludeRecursive">
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="Controllers" t="Include">
+              <e p="NewsCategoryApiController.cs" t="Include" />
+              <e p="NewsCategoryController.cs" t="Include" />
+              <e p="NewsItemApiController.cs" t="Include" />
+              <e p="NewsItemController.cs" t="Include" />
+            </e>
+            <e p="Data" t="Include">
+              <e p="NewsCustomModelBuilder.cs" t="Include" />
+            </e>
+            <e p="Models" t="Include">
+              <e p="NewsCategory.cs" t="Include" />
+              <e p="NewsItem.cs" t="Include" />
+              <e p="NewsItemCategory.cs" t="Include" />
+            </e>
+            <e p="module.json" t="Include" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.0" t="Include">
+                  <e p="SimplCommerce.Module.News.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Services" t="Include">
+              <e p="INewsCategoryService.cs" t="Include" />
+              <e p="INewsItemService.cs" t="Include" />
+              <e p="NewsCategoryService.cs" t="Include" />
+              <e p="NewsItemService.cs" t="Include" />
+            </e>
+            <e p="SimplCommerce.Module.News.csproj" t="IncludeRecursive" />
+            <e p="ViewModels" t="Include">
+              <e p="NewsCategoryForm.cs" t="Include" />
+              <e p="NewsCategoryVm.cs" t="Include" />
+              <e p="NewsItemForm.cs" t="Include" />
+              <e p="NewsItemThumbnail.cs" t="Include" />
+              <e p="NewsItemVm.cs" t="Include" />
+              <e p="NewsVm.cs" t="Include" />
+            </e>
+            <e p="Views" t="Include">
+              <e p="_ViewImports.cshtml" t="Include" />
+              <e p="_ViewStart.cshtml" t="Include" />
+              <e p="NewsCategory" t="Include">
+                <e p="NewsCategoryDetail.cshtml" t="Include" />
+              </e>
+              <e p="NewsItem" t="Include">
+                <e p="NewsHome.cshtml" t="Include" />
+                <e p="NewsItemDetail.cshtml" t="Include" />
+              </e>
+              <e p="Shared" t="Include">
+                <e p="_NewsThumbnail.cshtml" t="Include" />
+              </e>
+            </e>
+            <e p="wwwroot" t="Include">
+              <e p="admin" t="Include">
+                <e p="news-categories" t="Include">
+                  <e p="news-category-form.html" t="Include" />
+                  <e p="news-category-form.js" t="Include" />
+                  <e p="news-category-list.html" t="Include" />
+                  <e p="news-category-list.js" t="Include" />
+                  <e p="news-category-service.js" t="Include" />
+                </e>
+                <e p="news-items" t="Include">
+                  <e p="news-item-form.html" t="Include" />
+                  <e p="news-item-form.js" t="Include" />
+                  <e p="news-item-list.html" t="Include" />
+                  <e p="news-item-list.js" t="Include" />
+                  <e p="news-item-service.js" t="Include" />
+                </e>
+                <e p="news.module.js" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="SimplCommerce.Module.Orders" t="IncludeRecursive">
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="Components" t="Include">
+              <e p="OrderSummaryViewComponent.cs" t="Include" />
+            </e>
+            <e p="Controllers" t="Include">
+              <e p="CheckoutController.cs" t="Include" />
+              <e p="OrderApiController.cs" t="Include" />
+              <e p="OrderController.cs" t="Include" />
+              <e p="OrderHistoryApiController.cs" t="Include" />
+            </e>
+            <e p="Data" t="Include">
+              <e p="OrderCustomModelBuilder.cs" t="Include" />
+            </e>
+            <e p="Events" t="Include">
+              <e p="OrderChanged.cs" t="Include" />
+              <e p="OrderChangedHandler.cs" t="Include" />
+              <e p="OrderDetailGot.cs" t="Include" />
+            </e>
+            <e p="Models" t="Include">
+              <e p="Order.cs" t="Include" />
+              <e p="OrderAddress.cs" t="Include" />
+              <e p="OrderHistory.cs" t="Include" />
+              <e p="OrderItem.cs" t="Include" />
+              <e p="OrderStatus.cs" t="Include" />
+            </e>
+            <e p="module.json" t="Include" />
+            <e p="ModuleInitializer.cs" t="Include" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.0" t="Include">
+                  <e p="SimplCommerce.Module.Orders.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Services" t="Include">
+              <e p="IOrderEmailService.cs" t="Include" />
+              <e p="IOrderService.cs" t="Include" />
+              <e p="OrderCancellationBackgroundService.cs" t="Include" />
+              <e p="OrderEmailService.cs" t="Include" />
+              <e p="OrderService.cs" t="Include" />
+            </e>
+            <e p="SimplCommerce.Module.Orders.csproj" t="IncludeRecursive" />
+            <e p="ViewModels" t="Include">
+              <e p="AddressFormVm.cs" t="Include" />
+              <e p="CartItemVm.cs" t="Include" />
+              <e p="DeliveryInformationVm.cs" t="Include" />
+              <e p="OrderDetailVm.cs" t="Include" />
+              <e p="OrderHistoryListItem.cs" t="Include" />
+              <e p="OrderHistoryProductVm.cs" t="Include" />
+              <e p="OrderItemVm.cs" t="Include" />
+              <e p="OrderStatusForm.cs" t="Include" />
+              <e p="OrderTaxAndShippingPriceVm.cs" t="Include" />
+              <e p="ShippingAddressVm.cs" t="Include" />
+              <e p="TaxAndShippingPriceRequestVm.cs" t="Include" />
+            </e>
+            <e p="Views" t="Include">
+              <e p="_ViewImports.cshtml" t="Include" />
+              <e p="_ViewStart.cshtml" t="Include" />
+              <e p="Checkout" t="Include">
+                <e p="OrderConfirmation.cshtml" t="Include" />
+                <e p="Shipping.cshtml" t="Include" />
+              </e>
+              <e p="Components" t="Include">
+                <e p="OrderSummary.cshtml" t="Include" />
+              </e>
+              <e p="EmailTemplates" t="Include">
+                <e p="OrderEmailToCustomer.cshtml" t="Include" />
+              </e>
+              <e p="Order" t="Include">
+                <e p="OrderHistoryList.cshtml" t="Include" />
+              </e>
+            </e>
+            <e p="wwwroot" t="Include">
+              <e p="admin" t="Include">
+                <e p="Order" t="Include">
+                  <e p="order-detail.html" t="Include" />
+                  <e p="order-detail.js" t="Include" />
+                  <e p="order-list.html" t="Include" />
+                  <e p="order-list.js" t="Include" />
+                  <e p="order-service.js" t="Include" />
+                  <e p="order-widget.directive.html" t="Include" />
+                  <e p="order-widget.directive.js" t="Include" />
+                </e>
+                <e p="orders.module.js" t="Include" />
+              </e>
+              <e p="checkout.js" t="Include" />
+            </e>
+          </e>
+          <e p="SimplCommerce.Module.PaymentCoD" t="IncludeRecursive">
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="Components" t="Include">
+              <e p="CoDLandingViewComponent.cs" t="Include" />
+            </e>
+            <e p="Controllers" t="Include">
+              <e p="CoDApiController.cs" t="Include" />
+              <e p="CoDController.cs" t="Include" />
+            </e>
+            <e p="Models" t="Include">
+              <e p="CoDSetting.cs" t="Include" />
+              <e p="PaymentProviderHelper.cs" t="Include" />
+            </e>
+            <e p="module.json" t="Include" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.0" t="Include">
+                  <e p="SimplCommerce.Module.PaymentCoD.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="SimplCommerce.Module.PaymentCoD.csproj" t="IncludeRecursive" />
+            <e p="Views" t="Include">
+              <e p="_ViewImports.cshtml" t="Include" />
+              <e p="_ViewStart.cshtml" t="Include" />
+              <e p="Components" t="Include">
+                <e p="CoDLanding.cshtml" t="Include" />
+              </e>
+            </e>
+            <e p="wwwroot" t="Include">
+              <e p="admin" t="Include">
+                <e p="config" t="Include">
+                  <e p="cod-service.js" t="Include" />
+                  <e p="config-form.html" t="Include" />
+                  <e p="config-form.js" t="Include" />
+                </e>
+                <e p="paymentCoD.module.js" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="SimplCommerce.Module.PaymentPaypalExpress" t="IncludeRecursive">
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="Components" t="Include">
+              <e p="PaypalExpressLandingViewComponent.cs" t="Include" />
+            </e>
+            <e p="Controllers" t="Include">
+              <e p="PaypalExpressApiController.cs" t="Include" />
+              <e p="PaypalExpressController.cs" t="Include" />
+            </e>
+            <e p="Models" t="Include">
+              <e p="PaymentProviderHelper.cs" t="Include" />
+            </e>
+            <e p="module.json" t="Include" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.0" t="Include">
+                  <e p="SimplCommerce.Module.PaymentPaypalExpress.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="SimplCommerce.Module.PaymentPaypalExpress.csproj" t="IncludeRecursive" />
+            <e p="ViewModels" t="Include">
+              <e p="ExperienceProfile.cs" t="Include" />
+              <e p="PaymentCreateRequest.cs" t="Include" />
+              <e p="PaymentExecuteRequest.cs" t="Include" />
+              <e p="PaymentExecuteVm.cs" t="Include" />
+              <e p="PaypalExpressCheckoutForm.cs" t="Include" />
+              <e p="PaypalExpressConfigForm.cs" t="Include" />
+            </e>
+            <e p="Views" t="Include">
+              <e p="_ViewImports.cshtml" t="Include" />
+              <e p="_ViewStart.cshtml" t="Include" />
+              <e p="Components" t="Include">
+                <e p="PaypalExpressLanding.cshtml" t="Include" />
+              </e>
+            </e>
+            <e p="wwwroot" t="Include">
+              <e p="admin" t="Include">
+                <e p="config" t="Include">
+                  <e p="config-form.html" t="Include" />
+                  <e p="config-form.js" t="Include" />
+                  <e p="paypalExpress-service.js" t="Include" />
+                </e>
+                <e p="paypalExpress.module.js" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="SimplCommerce.Module.Payments" t="IncludeRecursive">
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="Controllers" t="Include">
+              <e p="CheckoutController.cs" t="Include" />
+              <e p="PaymentApiController.cs" t="Include" />
+              <e p="PaymentProviderApiController.cs" t="Include" />
+            </e>
+            <e p="Models" t="Include">
+              <e p="Payment.cs" t="Include" />
+              <e p="PaymentProvider.cs" t="Include" />
+              <e p="PaymentStatus.cs" t="Include" />
+            </e>
+            <e p="module.json" t="Include" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.0" t="Include">
+                  <e p="SimplCommerce.Module.Payments.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="SimplCommerce.Module.Payments.csproj" t="IncludeRecursive" />
+            <e p="ViewModels" t="Include">
+              <e p="CheckoutPaymentForm.cs" t="Include" />
+              <e p="PaymentProviderVm.cs" t="Include" />
+            </e>
+            <e p="Views" t="Include">
+              <e p="_ViewImports.cshtml" t="Include" />
+              <e p="_ViewStart.cshtml" t="Include" />
+              <e p="Checkout" t="Include">
+                <e p="Payment.cshtml" t="Include" />
+              </e>
+            </e>
+            <e p="wwwroot" t="Include">
+              <e p="admin" t="Include">
+                <e p="payment" t="Include">
+                  <e p="payment-list-by-order.directive.html" t="Include" />
+                  <e p="payment-list-by-order.directive.js" t="Include" />
+                  <e p="payment-service.js" t="Include" />
+                </e>
+                <e p="payments.module.js" t="Include" />
+                <e p="provider" t="Include">
+                  <e p="payment-provider-list.html" t="Include" />
+                  <e p="payment-provider-list.js" t="Include" />
+                  <e p="payment-provider-service.js" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="SimplCommerce.Module.PaymentStripe" t="IncludeRecursive">
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="Components" t="Include">
+              <e p="StripeLandingViewComponent.cs" t="Include" />
+            </e>
+            <e p="Controllers" t="Include">
+              <e p="StripeApiController.cs" t="Include" />
+              <e p="StripeController.cs" t="Include" />
+            </e>
+            <e p="Models" t="Include">
+              <e p="PaymentProviderHelper.cs" t="Include" />
+            </e>
+            <e p="module.json" t="Include" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.0" t="Include">
+                  <e p="SimplCommerce.Module.PaymentStripe.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="SimplCommerce.Module.PaymentStripe.csproj" t="IncludeRecursive" />
+            <e p="ViewModels" t="Include">
+              <e p="StripeCheckoutForm.cs" t="Include" />
+              <e p="StripeConfigForm.cs" t="Include" />
+            </e>
+            <e p="Views" t="Include">
+              <e p="_ViewImports.cshtml" t="Include" />
+              <e p="_ViewStart.cshtml" t="Include" />
+              <e p="Components" t="Include">
+                <e p="StripeLanding.cshtml" t="Include" />
+              </e>
+            </e>
+            <e p="wwwroot" t="Include">
+              <e p="admin" t="Include">
+                <e p="paymentStripe.module.js" t="Include" />
+                <e p="stripe" t="Include">
+                  <e p="stripe-config-form.html" t="Include" />
+                  <e p="stripe-config-form.js" t="Include" />
+                  <e p="stripe-service.js" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="SimplCommerce.Module.Pricing" t="IncludeRecursive">
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="Controllers" t="Include">
+              <e p="CartRuleApiController.cs" t="Include" />
+              <e p="CartRuleUsageApiController.cs" t="Include" />
+            </e>
+            <e p="Data" t="Include">
+              <e p="PricingCustomModelBuilder.cs" t="Include" />
+            </e>
+            <e p="Models" t="Include">
+              <e p="CartRule.cs" t="Include" />
+              <e p="CartRuleCategory.cs" t="Include" />
+              <e p="CartRuleCustomerGroup.cs" t="Include" />
+              <e p="CartRuleProduct.cs" t="Include" />
+              <e p="CartRuleUsage.cs" t="Include" />
+              <e p="CatalogRule.cs" t="Include" />
+              <e p="CatalogRuleCustomerGroup.cs" t="Include" />
+              <e p="Coupon.cs" t="Include" />
+            </e>
+            <e p="module.json" t="Include" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.0" t="Include">
+                  <e p="SimplCommerce.Module.Pricing.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Services" t="Include">
+              <e p="CartInfoForCoupon.cs" t="Include" />
+              <e p="CartItemForCoupon.cs" t="Include" />
+              <e p="CouponService.cs" t="Include" />
+              <e p="CouponValidationResult.cs" t="Include" />
+              <e p="DiscountableProduct.cs" t="Include" />
+              <e p="DiscountedProduct.cs" t="Include" />
+              <e p="ICouponService.cs" t="Include" />
+            </e>
+            <e p="SimplCommerce.Module.Pricing.csproj" t="IncludeRecursive" />
+            <e p="ViewModels" t="Include">
+              <e p="CartRuleForm.cs" t="Include" />
+              <e p="CartRuleProductVm.cs" t="Include" />
+            </e>
+            <e p="wwwroot" t="Include">
+              <e p="admin" t="Include">
+                <e p="cart-rule" t="Include">
+                  <e p="cart-rule-form.html" t="Include" />
+                  <e p="cart-rule-form.js" t="Include" />
+                  <e p="cart-rule-list.html" t="Include" />
+                  <e p="cart-rule-list.js" t="Include" />
+                  <e p="cart-rule-service.js" t="Include" />
+                </e>
+                <e p="cart-rule-usage" t="Include">
+                  <e p="cart-rule-usage-list.html" t="Include" />
+                  <e p="cart-rule-usage-list.js" t="Include" />
+                  <e p="cart-rule-usage-service.js" t="Include" />
+                </e>
+                <e p="pricing.module.js" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="SimplCommerce.Module.ProductComparison" t="IncludeRecursive">
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="Controllers" t="Include">
+              <e p="ComparingProductController.cs" t="Include" />
+            </e>
+            <e p="Events" t="Include">
+              <e p="UserSignedInHandler.cs" t="Include" />
+            </e>
+            <e p="Models" t="Include">
+              <e p="ComparingProduct.cs" t="Include" />
+            </e>
+            <e p="module.json" t="Include" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.0" t="Include">
+                  <e p="SimplCommerce.Module.ProductComparison.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Services" t="Include">
+              <e p="ComparingProductService.cs" t="Include" />
+              <e p="IComparingProductService.cs" t="Include" />
+              <e p="TooManyComparingProductException.cs" t="Include" />
+            </e>
+            <e p="SimplCommerce.Module.ProductComparison.csproj" t="IncludeRecursive" />
+            <e p="ViewModels" t="Include">
+              <e p="AddToComparisonModel.cs" t="Include" />
+              <e p="AddToComparisonResult.cs" t="Include" />
+              <e p="AttributeValueVm.cs" t="Include" />
+              <e p="AttributeVm.cs" t="Include" />
+              <e p="ComparingProductVm.cs" t="Include" />
+              <e p="ProductComparisonVm.cs" t="Include" />
+            </e>
+            <e p="Views" t="Include">
+              <e p="_ViewImports.cshtml" t="Include" />
+              <e p="_ViewStart.cshtml" t="Include" />
+              <e p="ComparingProduct" t="Include">
+                <e p="AddToComparisonResult.cshtml" t="Include" />
+                <e p="Index.cshtml" t="Include" />
+              </e>
+            </e>
+            <e p="wwwroot" t="Include">
+              <e p="product-comparison.js" t="Include" />
+            </e>
+          </e>
+          <e p="SimplCommerce.Module.ProductRecentlyViewed" t="IncludeRecursive">
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="Components" t="Include">
+              <e p="ProductRecentlyViewedViewComponent.cs" t="Include" />
+            </e>
+            <e p="Data" t="Include">
+              <e p="IRecentlyViewedProductRepository.cs" t="Include" />
+              <e p="RecentlyViewedProductRepository.cs" t="Include" />
+            </e>
+            <e p="Events" t="Include">
+              <e p="EntityViewedHandler.cs" t="Include" />
+            </e>
+            <e p="Models" t="Include">
+              <e p="RecentlyViewedProduct.cs" t="Include" />
+            </e>
+            <e p="module.json" t="Include" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.0" t="Include">
+                  <e p="SimplCommerce.Module.ProductRecentlyViewed.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="SimplCommerce.Module.ProductRecentlyViewed.csproj" t="IncludeRecursive" />
+            <e p="Views" t="Include">
+              <e p="_ViewImports.cshtml" t="Include" />
+              <e p="Components" t="Include">
+                <e p="ProductRecentlyViewed.cshtml" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="SimplCommerce.Module.Reviews" t="IncludeRecursive">
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="Components" t="Include">
+              <e p="ReviewViewComponent.cs" t="Include" />
+            </e>
+            <e p="Controllers" t="Include">
+              <e p="ReviewApiController.cs" t="Include" />
+              <e p="ReviewController.cs" t="Include" />
+            </e>
+            <e p="Data" t="Include">
+              <e p="IReviewRepository.cs" t="Include" />
+              <e p="ReviewRepository.cs" t="Include" />
+            </e>
+            <e p="Models" t="Include">
+              <e p="Review.cs" t="Include" />
+              <e p="ReviewListItemDto.cs" t="Include" />
+              <e p="ReviewStatus.cs" t="Include" />
+            </e>
+            <e p="module.json" t="Include" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.0" t="Include">
+                  <e p="SimplCommerce.Module.Reviews.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="SimplCommerce.Module.Reviews.csproj" t="IncludeRecursive" />
+            <e p="ViewModels" t="Include">
+              <e p="ReviewForm.cs" t="Include" />
+              <e p="ReviewItem.cs" t="Include" />
+              <e p="ReviewVm.cs" t="Include" />
+            </e>
+            <e p="Views" t="Include">
+              <e p="_ViewImports.cshtml" t="Include" />
+              <e p="Components" t="Include">
+                <e p="Review.cshtml" t="Include" />
+              </e>
+              <e p="Review" t="Include">
+                <e p="_ReviewForm.cshtml" t="Include" />
+                <e p="_ReviewFormSuccess.cshtml" t="Include" />
+              </e>
+            </e>
+            <e p="wwwroot" t="Include">
+              <e p="admin" t="Include">
+                <e p="Review" t="Include">
+                  <e p="review-list.html" t="Include" />
+                  <e p="review-list.js" t="Include" />
+                  <e p="review-service.js" t="Include" />
+                  <e p="review-widget.directive.html" t="Include" />
+                  <e p="review-widget.directive.js" t="Include" />
+                </e>
+                <e p="reviews.module.js" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="SimplCommerce.Module.SampleData" t="IncludeRecursive">
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="Controllers" t="Include">
+              <e p="SampleDataController.cs" t="Include" />
+            </e>
+            <e p="Data" t="Include">
+              <e p="ISqlRepository.cs" t="Include" />
+              <e p="SqlRepository.cs" t="Include" />
+            </e>
+            <e p="module.json" t="Include" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.0" t="Include">
+                  <e p="SimplCommerce.Module.SampleData.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="SampleContent" t="Include">
+              <e p="Images" t="Include">
+                <e p="25d3da45-b57b-40b6-8f41-2fc5170cb6b7.jpg" t="Include" />
+                <e p="282e5cd3-b664-43dc-ba06-d7e91721c560.jpg" t="Include" />
+                <e p="284b77c8-2ba8-43e1-826d-7c79c5cf4489.jpg" t="Include" />
+                <e p="3a3f587c-9c70-4e68-b480-20829a9f3e95.jpg" t="Include" />
+                <e p="4495b930-a901-44e2-9275-935f7e8ec53c.jpg" t="Include" />
+                <e p="5887a479-bb96-436f-8414-fa188cdc2aac.jpg" t="Include" />
+                <e p="68c7ff8f-014e-46c8-8daa-f35c646cc10a.jpg" t="Include" />
+                <e p="77f5c8cd-2052-4f4c-ac49-70cda3e2eb3c.jpg" t="Include" />
+                <e p="7d868097-58a5-43f8-a882-6d7872345fe7.jpg" t="Include" />
+                <e p="7da07700-9a17-498b-ba58-526559343878.jpg" t="Include" />
+                <e p="81b606ea-0bb0-4cea-a9d7-6406175df9bb.jpg" t="Include" />
+                <e p="89374e88-b14c-4d38-b5cd-eacdc5ce3015.jpg" t="Include" />
+                <e p="9874f0f5-46dc-495d-8c61-2c515577aa05.jpg" t="Include" />
+                <e p="a88b4a09-5824-4398-ac08-101d9061f927.jpg" t="Include" />
+                <e p="bb1243c9-63d5-4518-bbd5-cb3e35ade294.jpg" t="Include" />
+                <e p="bffb6f2c-8a3f-4fdd-817d-09a9f18cd190.jpg" t="Include" />
+                <e p="c015d99d-6c3b-4337-9ba7-26822d75a8e2.jpg" t="Include" />
+                <e p="d013921e-5f11-4472-b5ff-7f78d5987a69.jpg" t="Include" />
+                <e p="d539b558-15ea-4317-9a5b-62e4db9a45f5.jpg" t="Include" />
+                <e p="d74fd909-6fe0-4bc3-bf61-86d12dc98a2e.jpg" t="Include" />
+                <e p="e32c3caa-f7bc-4a3c-b970-f62c503b85bc.jpg" t="Include" />
+                <e p="e543ed8e-5feb-4a39-8860-51d94a00ee31.jpg" t="Include" />
+                <e p="ea0af866-a650-4909-877d-00eabbf3d8fd.jpg" t="Include" />
+                <e p="f9a76a94-6e1a-4489-bf7d-3dc6a68a0785.jpg" t="Include" />
+                <e p="fdfd1daf-ec7a-4c6e-83dd-a862eae735db.jpg" t="Include" />
+                <e p="fefe68b9-aee8-4e7d-a49a-17f805555591.jpg" t="Include" />
+                <e p="ffc255b3-07c8-4ee5-94e9-d472c6af3f07.jpg" t="Include" />
+              </e>
+              <e p="ResetToSampleData.sql" t="Include" />
+              <e p="ResetToSampleData_Postgres.sql" t="Include" />
+            </e>
+            <e p="Services" t="Include">
+              <e p="ISampleDataService.cs" t="Include" />
+              <e p="SampleDataService.cs" t="Include" />
+            </e>
+            <e p="SimplCommerce.Module.SampleData.csproj" t="IncludeRecursive" />
+          </e>
+          <e p="SimplCommerce.Module.Search" t="IncludeRecursive">
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="Components" t="Include">
+              <e p="SearchFormViewComponent.cs" t="Include" />
+            </e>
+            <e p="Controllers" t="Include">
+              <e p="SearchApiController.cs" t="Include" />
+              <e p="SearchController.cs" t="Include" />
+            </e>
+            <e p="Models" t="Include">
+              <e p="Query.cs" t="Include" />
+            </e>
+            <e p="module.json" t="Include" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.0" t="Include">
+                  <e p="SimplCommerce.Module.Search.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="SimplCommerce.Module.Search.csproj" t="IncludeRecursive" />
+            <e p="ViewModels" t="Include">
+              <e p="SearchForm.cs" t="Include" />
+              <e p="SearchResult.cs" t="Include" />
+            </e>
+            <e p="Views" t="Include">
+              <e p="_ViewImports.cshtml" t="Include" />
+              <e p="_ViewStart.cshtml" t="Include" />
+              <e p="Components" t="Include">
+                <e p="SearchForm.cshtml" t="Include" />
+              </e>
+              <e p="Search" t="Include">
+                <e p="Index.cshtml" t="Include" />
+              </e>
+            </e>
+            <e p="wwwroot" t="Include">
+              <e p="admin" t="Include">
+                <e p="most-search-keywords.directive.html" t="Include" />
+                <e p="most-search-keywords.directive.js" t="Include" />
+                <e p="search-service.js" t="Include" />
+                <e p="search.module.js" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="SimplCommerce.Module.Shipments" t="IncludeRecursive">
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="Controllers" t="Include">
+              <e p="ShipmentApiController.cs" t="Include" />
+            </e>
+            <e p="Data" t="Include">
+              <e p="ShipmentCustomModelBuilder.cs" t="Include" />
+            </e>
+            <e p="Events" t="Include">
+              <e p="OrderDetailGotHandler.cs" t="Include" />
+            </e>
+            <e p="Models" t="Include">
+              <e p="Shipment.cs" t="Include" />
+              <e p="ShipmentItem.cs" t="Include" />
+              <e p="ShipmentStatus.cs" t="Include" />
+            </e>
+            <e p="module.json" t="Include" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.0" t="Include">
+                  <e p="SimplCommerce.Module.Shipments.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Services" t="Include">
+              <e p="IShipmentService.cs" t="Include" />
+              <e p="ShipmentItemVm.cs" t="Include" />
+              <e p="ShipmentService.cs" t="Include" />
+            </e>
+            <e p="SimplCommerce.Module.Shipments.csproj" t="IncludeRecursive" />
+            <e p="ViewModels" t="Include">
+              <e p="ShipmentForm.cs" t="Include" />
+            </e>
+            <e p="wwwroot" t="Include">
+              <e p="admin" t="Include">
+                <e p="shipment" t="Include">
+                  <e p="shipment-details.html" t="Include" />
+                  <e p="shipment-details.js" t="Include" />
+                  <e p="shipment-form.html" t="Include" />
+                  <e p="shipment-form.js" t="Include" />
+                  <e p="shipment-list-by-order.directive.html" t="Include" />
+                  <e p="shipment-list-by-order.directive.js" t="Include" />
+                  <e p="shipment-list.html" t="Include" />
+                  <e p="shipment-list.js" t="Include" />
+                  <e p="shipment-service.js" t="Include" />
+                </e>
+                <e p="shipment.module.js" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="SimplCommerce.Module.Shipping" t="IncludeRecursive">
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="Controllers" t="Include">
+              <e p="ShippingProviderApiController.cs" t="Include" />
+            </e>
+            <e p="Models" t="Include">
+              <e p="ShippingProvider.cs" t="Include" />
+            </e>
+            <e p="module.json" t="Include" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.0" t="Include">
+                  <e p="SimplCommerce.Module.Shipping.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="SimplCommerce.Module.Shipping.csproj" t="IncludeRecursive" />
+            <e p="ViewModels" t="Include">
+              <e p="ShippingAddressVm.cs" t="Include" />
+            </e>
+            <e p="wwwroot" t="Include">
+              <e p="admin" t="Include">
+                <e p="provider" t="Include">
+                  <e p="shipping-provider-list.html" t="Include" />
+                  <e p="shipping-provider-list.js" t="Include" />
+                  <e p="shipping-provider-service.js" t="Include" />
+                </e>
+                <e p="shipping.module.js" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="SimplCommerce.Module.ShippingFlatRate" t="IncludeRecursive">
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.0" t="Include">
+                  <e p="SimplCommerce.Module.ShippingFlatRate.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="SimplCommerce.Module.ShippingFlatRate.csproj" t="IncludeRecursive" />
+          </e>
+          <e p="SimplCommerce.Module.ShippingFree" t="IncludeRecursive">
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="Models" t="Include">
+              <e p="FreeShippingSetting.cs" t="Include" />
+            </e>
+            <e p="module.json" t="Include" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.0" t="Include">
+                  <e p="SimplCommerce.Module.ShippingFree.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Services" t="Include">
+              <e p="FreeShippingServiceProvider.cs" t="Include" />
+            </e>
+            <e p="SimplCommerce.Module.ShippingFree.csproj" t="IncludeRecursive" />
+          </e>
+          <e p="SimplCommerce.Module.ShippingPrices" t="IncludeRecursive">
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="module.json" t="Include" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.0" t="Include">
+                  <e p="SimplCommerce.Module.ShippingPrices.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Services" t="Include">
+              <e p="GetShippingPriceRequest.cs" t="Include" />
+              <e p="GetShippingPriceResponse.cs" t="Include" />
+              <e p="IShippingPriceService.cs" t="Include" />
+              <e p="IShippingPriceServiceProvider.cs" t="Include" />
+              <e p="ShippingItem.cs" t="Include" />
+              <e p="ShippingPrice.cs" t="Include" />
+              <e p="ShippingPriceService.cs" t="Include" />
+            </e>
+            <e p="SimplCommerce.Module.ShippingPrices.csproj" t="IncludeRecursive" />
+          </e>
+          <e p="SimplCommerce.Module.ShippingTableRate" t="IncludeRecursive">
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="Controllers" t="Include">
+              <e p="PriceAndDestinationApiController.cs" t="Include" />
+            </e>
+            <e p="Models" t="Include">
+              <e p="PriceAndDestination.cs" t="Include" />
+            </e>
+            <e p="module.json" t="Include" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.0" t="Include">
+                  <e p="SimplCommerce.Module.ShippingTableRate.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Services" t="Include">
+              <e p="TableRateShippingServiceProvider.cs" t="Include" />
+            </e>
+            <e p="SimplCommerce.Module.ShippingTableRate.csproj" t="IncludeRecursive" />
+            <e p="ViewModels" t="Include">
+              <e p="PriceAndDestinationForm.cs" t="Include" />
+            </e>
+            <e p="wwwroot" t="Include">
+              <e p="admin" t="Include">
+                <e p="shipping-tablerate.module.js" t="Include" />
+                <e p="tablerate" t="Include">
+                  <e p="shipping-tablerate-form.html" t="Include" />
+                  <e p="shipping-tablerate-form.js" t="Include" />
+                  <e p="shipping-tablerate-service.js" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="SimplCommerce.Module.ShoppingCart" t="IncludeRecursive">
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="Components" t="Include">
+              <e p="CartBadgeViewComponent.cs" t="Include" />
+            </e>
+            <e p="Controllers" t="Include">
+              <e p="CartController.cs" t="Include" />
+            </e>
+            <e p="Events" t="Include">
+              <e p="UserSignedInHandler.cs" t="Include" />
+            </e>
+            <e p="Models" t="Include">
+              <e p="Cart.cs" t="Include" />
+              <e p="CartItem.cs" t="Include" />
+            </e>
+            <e p="module.json" t="Include" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.0" t="Include">
+                  <e p="SimplCommerce.Module.ShoppingCart.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Services" t="Include">
+              <e p="CartService.cs" t="Include" />
+              <e p="ICartService.cs" t="Include" />
+            </e>
+            <e p="SimplCommerce.Module.ShoppingCart.csproj" t="IncludeRecursive" />
+            <e p="ViewModels" t="Include">
+              <e p="AddToCartModel.cs" t="Include" />
+              <e p="AddToCartResult.cs" t="Include" />
+              <e p="ApplyCouponForm.cs" t="Include" />
+              <e p="CartItemVm.cs" t="Include" />
+              <e p="CartQuantityUpdate.cs" t="Include" />
+              <e p="CartVm.cs" t="Include" />
+              <e p="ProductVariationOption.cs" t="Include" />
+              <e p="ProductVariationOptionVm.cs" t="Include" />
+            </e>
+            <e p="Views" t="Include">
+              <e p="_ViewImports.cshtml" t="Include" />
+              <e p="_ViewStart.cshtml" t="Include" />
+              <e p="Cart" t="Include">
+                <e p="AddToCartResult.cshtml" t="Include" />
+                <e p="Index.cshtml" t="Include" />
+              </e>
+              <e p="Components" t="Include">
+                <e p="CartBadge.cshtml" t="Include" />
+              </e>
+            </e>
+            <e p="wwwroot" t="Include">
+              <e p="add-to-cart.js" t="Include" />
+              <e p="shoppingcart-list.js" t="Include" />
+              <e p="shoppingcart-service.js" t="Include" />
+            </e>
+          </e>
+          <e p="SimplCommerce.Module.StorageAmazonS3" t="IncludeRecursive">
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="ModuleInitializer.cs" t="Include" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.0" t="Include">
+                  <e p="SimplCommerce.Module.StorageAmazonS3.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="S3StorageService.cs" t="Include" />
+            <e p="SimplCommerce.Module.StorageAmazonS3.csproj" t="IncludeRecursive" />
+          </e>
+          <e p="SimplCommerce.Module.StorageAzureBlob" t="IncludeRecursive">
+            <e p="AzureBlobStorageService.cs" t="Include" />
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="ModuleInitializer.cs" t="Include" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.0" t="Include">
+                  <e p="SimplCommerce.Module.StorageAzureBlob.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="SimplCommerce.Module.StorageAzureBlob.csproj" t="IncludeRecursive" />
+          </e>
+          <e p="SimplCommerce.Module.StorageLocal" t="IncludeRecursive">
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="LocalStorageService.cs" t="Include" />
+            <e p="module.json" t="Include" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.0" t="Include">
+                  <e p="SimplCommerce.Module.StorageLocal.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="SimplCommerce.Module.StorageLocal.csproj" t="IncludeRecursive" />
+          </e>
+          <e p="SimplCommerce.Module.Tax" t="IncludeRecursive">
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="Controllers" t="Include">
+              <e p="TaxClassApiController.cs" t="Include" />
+              <e p="TaxRateApiController.cs" t="Include" />
+            </e>
+            <e p="Models" t="Include">
+              <e p="TaxClass.cs" t="Include" />
+              <e p="TaxRate.cs" t="Include" />
+            </e>
+            <e p="module.json" t="Include" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.0" t="Include">
+                  <e p="SimplCommerce.Module.Tax.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Services" t="Include">
+              <e p="ITaxService.cs" t="Include" />
+              <e p="TaxService.cs" t="Include" />
+            </e>
+            <e p="SimplCommerce.Module.Tax.csproj" t="IncludeRecursive" />
+            <e p="ViewModels" t="Include">
+              <e p="TaxClassForm.cs" t="Include" />
+              <e p="TaxRateForm.cs" t="Include" />
+            </e>
+            <e p="wwwroot" t="Include">
+              <e p="admin" t="Include">
+                <e p="tax-class" t="Include">
+                  <e p="tax-class-form.html" t="Include" />
+                  <e p="tax-class-form.js" t="Include" />
+                  <e p="tax-class-list.html" t="Include" />
+                  <e p="tax-class-list.js" t="Include" />
+                  <e p="tax-class-service.js" t="Include" />
+                </e>
+                <e p="tax-rate" t="Include">
+                  <e p="tax-rate-form.html" t="Include" />
+                  <e p="tax-rate-form.js" t="Include" />
+                  <e p="tax-rate-list.html" t="Include" />
+                  <e p="tax-rate-list.js" t="Include" />
+                  <e p="tax-rate-service.js" t="Include" />
+                </e>
+                <e p="tax.module.js" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="SimplCommerce.Module.Vendors" t="IncludeRecursive">
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="Controllers" t="Include">
+              <e p="VendorApiController.cs" t="Include" />
+            </e>
+            <e p="module.json" t="Include" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.0" t="Include">
+                  <e p="SimplCommerce.Module.Vendors.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Services" t="Include">
+              <e p="IVendorService.cs" t="Include" />
+              <e p="VendorService.cs" t="Include" />
+            </e>
+            <e p="SimplCommerce.Module.Vendors.csproj" t="IncludeRecursive" />
+            <e p="ViewModels" t="Include">
+              <e p="VendorForm.cs" t="Include" />
+              <e p="VendorManager.cs" t="Include" />
+            </e>
+            <e p="wwwroot" t="Include">
+              <e p="admin" t="Include">
+                <e p="vendors" t="Include">
+                  <e p="vendor-form.html" t="Include" />
+                  <e p="vendor-form.js" t="Include" />
+                  <e p="vendor-list.html" t="Include" />
+                  <e p="vendor-list.js" t="Include" />
+                  <e p="vendor-service.js" t="Include" />
+                </e>
+                <e p="vendors.module.js" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="SimplCommerce.Infrastructure" t="IncludeRecursive">
+          <e p="BackgroundService.cs" t="Include" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="CurrencyHelper.cs" t="Include" />
+          <e p="Data" t="Include">
+            <e p="ICustomModelBuilder.cs" t="Include" />
+            <e p="IRepository.cs" t="Include" />
+            <e p="IRepositoryWithTypedId.cs" t="Include" />
+          </e>
+          <e p="EnumHelper.cs" t="Include" />
+          <e p="GlobalConfiguration.cs" t="Include" />
+          <e p="HttpClientExtensions.cs" t="Include" />
+          <e p="IModuleInitializer.cs" t="Include" />
+          <e p="Models" t="Include">
+            <e p="EntityBase.cs" t="Include" />
+            <e p="EntityBaseWithTypedId.cs" t="Include" />
+            <e p="IEntityWithTypedId.cs" t="Include" />
+            <e p="ValidatableObject.cs" t="Include" />
+          </e>
+          <e p="ModuleInfo.cs" t="Include" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp2.0" t="Include">
+                <e p="SimplCommerce.Infrastructure.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="OrderByExtension.cs" t="Include" />
+          <e p="Result.cs" t="Include" />
+          <e p="ResultOfT.cs" t="Include" />
+          <e p="ScheduledTasks" t="Include">
+            <e p="IScheduledTask.cs" t="Include" />
+            <e p="SchedulerBackgroundService.cs" t="Include" />
+            <e p="SchedulerTasksExtensions.cs" t="Include" />
+            <e p="SchedulerTaskWrapper.cs" t="Include" />
+          </e>
+          <e p="SequentialMediator.cs" t="Include" />
+          <e p="SimplCommerce.Infrastructure.csproj" t="IncludeRecursive" />
+          <e p="StringHelper.cs" t="Include" />
+          <e p="Web" t="Include">
+            <e p="IRazorViewRenderer.cs" t="Include" />
+            <e p="ModelBinders" t="Include">
+              <e p="InvariantDecimalModelBinder.cs" t="Include" />
+              <e p="InvariantDecimalModelBinderProvider.cs" t="Include" />
+            </e>
+            <e p="ModuleViewLocationExpander.cs" t="Include" />
+            <e p="RazorViewToStringRenderer.cs" t="Include" />
+            <e p="SmartTable" t="Include">
+              <e p="Pagination.cs" t="Include" />
+              <e p="Search.cs" t="Include" />
+              <e p="SmartTableExtension.cs" t="Include" />
+              <e p="SmartTableParam.cs" t="Include" />
+              <e p="SmartTableResult.cs" t="Include" />
+              <e p="Sort.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="SimplCommerce.WebHost" t="IncludeRecursive">
+          <e p=".bowerrc" t="Include" />
+          <e p="appsettings.Development.json" t="Include" />
+          <e p="appsettings.docker.json" t="Include" />
+          <e p="appsettings.json" t="Include" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="bower.json" t="Include" />
+          <e p="Extensions" t="Include">
+            <e p="ApplicationBuilderExtensions.cs" t="Include" />
+            <e p="ServiceCollectionExtensions.cs" t="Include" />
+          </e>
+          <e p="gulpfile.js" t="Include" />
+          <e p="Migrations" t="Include">
+            <e p="20160730194908_InitialSchema.cs" t="Include" />
+            <e p="20160730194908_InitialSchema.Designer.cs" t="Include" />
+            <e p="20160802083619_AddLocalization.cs" t="Include" />
+            <e p="20160802083619_AddLocalization.Designer.cs" t="Include" />
+            <e p="20160808145810_ToDateTimeOffset.cs" t="Include" />
+            <e p="20160808145810_ToDateTimeOffset.Designer.cs" t="Include" />
+            <e p="20160808215952_ToAllDateTimeOffset.cs" t="Include" />
+            <e p="20160808215952_ToAllDateTimeOffset.Designer.cs" t="Include" />
+            <e p="20160830225529_EntityType.cs" t="Include" />
+            <e p="20160830225529_EntityType.Designer.cs" t="Include" />
+            <e p="20160831232835_AddActivityLog.cs" t="Include" />
+            <e p="20160831232835_AddActivityLog.Designer.cs" t="Include" />
+            <e p="20160920220357_ProductOptionSortIndex.cs" t="Include" />
+            <e p="20160920220357_ProductOptionSortIndex.Designer.cs" t="Include" />
+            <e p="20160924143823_AddProductReview.cs" t="Include" />
+            <e p="20160924143823_AddProductReview.Designer.cs" t="Include" />
+            <e p="20160926021822_SetProduct_RatingAverageNullable.cs" t="Include" />
+            <e p="20160926021822_SetProduct_RatingAverageNullable.Designer.cs" t="Include" />
+            <e p="20161029185638_Core_Entity.cs" t="Include" />
+            <e p="20161029185638_Core_Entity.Designer.cs" t="Include" />
+            <e p="20161217190826_OrderAddresses.cs" t="Include" />
+            <e p="20161217190826_OrderAddresses.Designer.cs" t="Include" />
+            <e p="20161220170748_ProductSpecialPrice.cs" t="Include" />
+            <e p="20161220170748_ProductSpecialPrice.Designer.cs" t="Include" />
+            <e p="20170104231817_AddAppSetting.cs" t="Include" />
+            <e p="20170104231817_AddAppSetting.Designer.cs" t="Include" />
+            <e p="20170108130921_MoreProductOption.cs" t="Include" />
+            <e p="20170108130921_MoreProductOption.Designer.cs" t="Include" />
+            <e p="20170217035116_AddedVendor.cs" t="Include" />
+            <e p="20170217035116_AddedVendor.Designer.cs" t="Include" />
+            <e p="20170226152133_CorrectVendorModel.cs" t="Include" />
+            <e p="20170226152133_CorrectVendorModel.Designer.cs" t="Include" />
+            <e p="20170319212213_AddCategoryImage.cs" t="Include" />
+            <e p="20170319212213_AddCategoryImage.Designer.cs" t="Include" />
+            <e p="20170401135423_AddedNewsModule.cs" t="Include" />
+            <e p="20170401135423_AddedNewsModule.Designer.cs" t="Include" />
+            <e p="20170425033854_AddedMenuManagement.cs" t="Include" />
+            <e p="20170425033854_AddedMenuManagement.Designer.cs" t="Include" />
+            <e p="20170426161416_AddedProductComparison.cs" t="Include" />
+            <e p="20170426161416_AddedProductComparison.Designer.cs" t="Include" />
+            <e p="20170428164249_AddedContactModule.cs" t="Include" />
+            <e p="20170428164249_AddedContactModule.Designer.cs" t="Include" />
+            <e p="20170429150009_AddedIncludeInMenuToCategory.cs" t="Include" />
+            <e p="20170429150009_AddedIncludeInMenuToCategory.Designer.cs" t="Include" />
+            <e p="20170710210726_AddUserIdToActivity.cs" t="Include" />
+            <e p="20170710210726_AddUserIdToActivity.Designer.cs" t="Include" />
+            <e p="20170712160903_Added_ProductRecentlyViewed.cs" t="Include" />
+            <e p="20170712160903_Added_ProductRecentlyViewed.Designer.cs" t="Include" />
+            <e p="20170812064037_AddedProductOptionDisplayOption.cs" t="Include" />
+            <e p="20170812064037_AddedProductOptionDisplayOption.Designer.cs" t="Include" />
+            <e p="20170820212011_AddedCustomerGroup.cs" t="Include" />
+            <e p="20170820212011_AddedCustomerGroup.Designer.cs" t="Include" />
+            <e p="20170823214152_AddedPricingModule.cs" t="Include" />
+            <e p="20170823214152_AddedPricingModule.Designer.cs" t="Include" />
+            <e p="20170826042900_UpdatedCustomerGroup.cs" t="Include" />
+            <e p="20170826042900_UpdatedCustomerGroup.Designer.cs" t="Include" />
+            <e p="20170901192956_MoreOnPricing.cs" t="Include" />
+            <e p="20170901192956_MoreOnPricing.Designer.cs" t="Include" />
+            <e p="20170904195903_PricingCartRuleCatalogFilter.cs" t="Include" />
+            <e p="20170904195903_PricingCartRuleCatalogFilter.Designer.cs" t="Include" />
+            <e p="20171031175319_AddedTaxModule.cs" t="Include" />
+            <e p="20171031175319_AddedTaxModule.Designer.cs" t="Include" />
+            <e p="20171108171847_AddedShippingInventory.cs" t="Include" />
+            <e p="20171108171847_AddedShippingInventory.Designer.cs" t="Include" />
+            <e p="20171117110016_AddedShippingProviderConfigUrl.cs" t="Include" />
+            <e p="20171117110016_AddedShippingProviderConfigUrl.Designer.cs" t="Include" />
+            <e p="20171118045254_AddedNoteToPriceAndDestination.cs" t="Include" />
+            <e p="20171118045254_AddedNoteToPriceAndDestination.Designer.cs" t="Include" />
+            <e p="20171118175417_MoreStandarOnAddresses.cs" t="Include" />
+            <e p="20171118175417_MoreStandarOnAddresses.Designer.cs" t="Include" />
+            <e p="20171122091152_AddedTaxedToOrderItem.cs" t="Include" />
+            <e p="20171122091152_AddedTaxedToOrderItem.Designer.cs" t="Include" />
+            <e p="20171122104808_SeperatedCartAndOrder.cs" t="Include" />
+            <e p="20171122104808_SeperatedCartAndOrder.Designer.cs" t="Include" />
+            <e p="20171122162753_RefactoredShipping.cs" t="Include" />
+            <e p="20171122162753_RefactoredShipping.Designer.cs" t="Include" />
+            <e p="20171125164832_AddedOrderTotal.cs" t="Include" />
+            <e p="20171125164832_AddedOrderTotal.Designer.cs" t="Include" />
+            <e p="20171207221346_AddedPayment.cs" t="Include" />
+            <e p="20171207221346_AddedPayment.Designer.cs" t="Include" />
+            <e p="20171208002046_AddedMoreInfoToCart.cs" t="Include" />
+            <e p="20171208002046_AddedMoreInfoToCart.Designer.cs" t="Include" />
+            <e p="20171208163656_AddedPaymentMethodToOrder.cs" t="Include" />
+            <e p="20171208163656_AddedPaymentMethodToOrder.Designer.cs" t="Include" />
+            <e p="20171213041553_AddedPaymentTable.cs" t="Include" />
+            <e p="20171213041553_AddedPaymentTable.Designer.cs" t="Include" />
+            <e p="20171217232310_AddedModuleToAppSettings.cs" t="Include" />
+            <e p="20171217232310_AddedModuleToAppSettings.Designer.cs" t="Include" />
+            <e p="20180102202939_CleanUpPaymentProvider.cs" t="Include" />
+            <e p="20180102202939_CleanUpPaymentProvider.Designer.cs" t="Include" />
+            <e p="20180105173848_Add-DisplayOrder-MenuItem.cs" t="Include" />
+            <e p="20180105173848_Add-DisplayOrder-MenuItem.Designer.cs" t="Include" />
+            <e p="20180118175342_AddedStockHistory.cs" t="Include" />
+            <e p="20180118175342_AddedStockHistory.Designer.cs" t="Include" />
+            <e p="20180119194501_AddedOrderHistory.cs" t="Include" />
+            <e p="20180119194501_AddedOrderHistory.Designer.cs" t="Include" />
+            <e p="20180121172331_MoreFieldsToShipment.cs" t="Include" />
+            <e p="20180121172331_MoreFieldsToShipment.Designer.cs" t="Include" />
+            <e p="20180128065751_AddedPaymentStatusAndNamingInOrder.cs" t="Include" />
+            <e p="20180128065751_AddedPaymentStatusAndNamingInOrder.Designer.cs" t="Include" />
+            <e p="20180130183306_SetCascadeToRestrictByDefault.cs" t="Include" />
+            <e p="20180130183306_SetCascadeToRestrictByDefault.Designer.cs" t="Include" />
+            <e p="20180204184500_AddedIsProductPriceIncludeTaxToCart.cs" t="Include" />
+            <e p="20180204184500_AddedIsProductPriceIncludeTaxToCart.Designer.cs" t="Include" />
+            <e p="20180205075940_AddedConstraintWarehouseStock.cs" t="Include" />
+            <e p="20180205075940_AddedConstraintWarehouseStock.Designer.cs" t="Include" />
+            <e p="20180205203129_AddedGtinToProduct.cs" t="Include" />
+            <e p="20180205203129_AddedGtinToProduct.Designer.cs" t="Include" />
+            <e p="20180208000641_CartRuleSetDeleteCascase.cs" t="Include" />
+            <e p="20180208000641_CartRuleSetDeleteCascase.Designer.cs" t="Include" />
+            <e p="20180208193158_RemoveCouponUsage.cs" t="Include" />
+            <e p="20180208193158_RemoveCouponUsage.Designer.cs" t="Include" />
+            <e p="20180215030604_AddedCountryFieldDisplayToggles.cs" t="Include" />
+            <e p="20180215030604_AddedCountryFieldDisplayToggles.Designer.cs" t="Include" />
+            <e p="20180216024202_CascadeNewsCategory.cs" t="Include" />
+            <e p="20180216024202_CascadeNewsCategory.Designer.cs" t="Include" />
+            <e p="20180304130323_AddedPaymentFee.cs" t="Include" />
+            <e p="20180304130323_AddedPaymentFee.Designer.cs" t="Include" />
+            <e p="20180319224428_AddedPaymentFeeToOrder.cs" t="Include" />
+            <e p="20180319224428_AddedPaymentFeeToOrder.Designer.cs" t="Include" />
+            <e p="20180321225711_AddedZipCodeToTaxRate.cs" t="Include" />
+            <e p="20180321225711_AddedZipCodeToTaxRate.Designer.cs" t="Include" />
+            <e p="SimplDbContextModelSnapshot.cs" t="Include" />
+          </e>
+          <e p="MigrationSimplDbContextFactory.cs" t="Include" />
+          <e p="Modules" t="Include">
+            <e p=".gitignore" t="Include" />
+          </e>
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp2.0" t="Include">
+                <e p="SimplCommerce.WebHost.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="package-lock.json" t="Include" />
+          <e p="package.json" t="Include" />
+          <e p="Program.cs" t="Include" />
+          <e p="Properties" t="Include">
+            <e p="launchSettings.json" t="Include" />
+          </e>
+          <e p="SimplCommerce.WebHost.csproj" t="IncludeRecursive" />
+          <e p="Startup.cs" t="Include" />
+          <e p="themes" t="Include">
+            <e p="SampleTheme" t="Include">
+              <e p="Modules" t="Include">
+                <e p="SimplCommerce.Module.Core" t="Include">
+                  <e p="Views" t="Include">
+                    <e p="_ViewImports.cshtml" t="Include" />
+                    <e p="_ViewStart.cshtml" t="Include" />
+                    <e p="Home" t="Include">
+                      <e p="Index.cshtml" t="Include" />
+                    </e>
+                  </e>
+                </e>
+              </e>
+              <e p="theme.json" t="Include" />
+              <e p="Views" t="Include">
+                <e p="_ViewImports.cshtml" t="Include" />
+                <e p="Shared" t="Include">
+                  <e p="_Layout.cshtml" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="Views" t="Include">
+            <e p="_ViewImports.cshtml" t="Include" />
+            <e p="Shared" t="Include">
+              <e p="404.cshtml" t="Include" />
+              <e p="_AccountMenu.cshtml" t="Include" />
+              <e p="_Layout.cshtml" t="Include" />
+              <e p="_LoginPartial.cshtml" t="Include" />
+              <e p="_SelectLanguagePartial.cshtml" t="Include" />
+              <e p="_ValidationScriptsPartial.cshtml" t="Include" />
+              <e p="Error.cshtml" t="Include" />
+            </e>
+          </e>
+          <e p="web.config" t="Include" />
+          <e p="wwwroot" t="Include">
+            <e p="favicon.ico" t="Include" />
+            <e p="lib" t="Include">
+              <e p="angular" t="Include">
+                <e p="angular.js" t="Include" />
+              </e>
+              <e p="angular-animate" t="Include">
+                <e p="angular-animate.js" t="Include" />
+                <e p="angular-animate.min.js" t="Include" />
+              </e>
+              <e p="angular-aria" t="Include">
+                <e p="angular-aria.js" t="Include" />
+                <e p="angular-aria.min.js" t="Include" />
+              </e>
+              <e p="angular-bootstrap" t="Include">
+                <e p="ui-bootstrap-csp.css" t="Include" />
+                <e p="ui-bootstrap-tpls.js" t="Include" />
+                <e p="ui-bootstrap-tpls.min.js" t="Include" />
+                <e p="ui-bootstrap.js" t="Include" />
+                <e p="ui-bootstrap.min.js" t="Include" />
+              </e>
+              <e p="angular-bootstrap-colorpicker" t="Include">
+                <e p="css" t="Include">
+                  <e p="colorpicker.css" t="Include" />
+                  <e p="colorpicker.min.css" t="Include" />
+                </e>
+                <e p="img" t="Include">
+                  <e p="alpha.png" t="Include" />
+                  <e p="hue.png" t="Include" />
+                  <e p="saturation.png" t="Include" />
+                </e>
+                <e p="js" t="Include">
+                  <e p="bootstrap-colorpicker-module.js" t="Include" />
+                  <e p="bootstrap-colorpicker-module.min.js" t="Include" />
+                </e>
+              </e>
+              <e p="angular-material" t="Include">
+                <e p="angular-material-mocks.js" t="Include" />
+                <e p="angular-material.css" t="Include" />
+                <e p="angular-material.js" t="Include" />
+                <e p="angular-material.min.css" t="Include" />
+                <e p="angular-material.min.js" t="Include" />
+              </e>
+              <e p="angular-messages" t="Include">
+                <e p="angular-messages.js" t="Include" />
+              </e>
+              <e p="angular-smart-table" t="Include">
+                <e p="smart-table.js" t="Include" />
+                <e p="smart-table.min.js" t="Include" />
+              </e>
+              <e p="angular-summernote" t="Include">
+                <e p="angular-summernote.js" t="Include" />
+                <e p="angular-summernote.min.js" t="Include" />
+              </e>
+              <e p="angular-ui-router" t="Include">
+                <e p="angular-ui-router.js" t="Include" />
+                <e p="angular-ui-router.min.js" t="Include" />
+              </e>
+              <e p="angular-ui-tree" t="Include">
+                <e p="angular-ui-tree.css" t="Include" />
+                <e p="angular-ui-tree.js" t="Include" />
+                <e p="angular-ui-tree.min.css" t="Include" />
+                <e p="angular-ui-tree.min.js" t="Include" />
+              </e>
+              <e p="bootbox" t="Include">
+                <e p="bootbox.js" t="Include" />
+              </e>
+              <e p="bootstrap" t="Include">
+                <e p="css" t="Include">
+                  <e p="bootstrap-theme.css" t="Include" />
+                  <e p="bootstrap-theme.css.map" t="Include" />
+                  <e p="bootstrap-theme.min.css" t="Include" />
+                  <e p="bootstrap-theme.min.css.map" t="Include" />
+                  <e p="bootstrap.css" t="Include" />
+                  <e p="bootstrap.css.map" t="Include" />
+                  <e p="bootstrap.min.css" t="Include" />
+                  <e p="bootstrap.min.css.map" t="Include" />
+                </e>
+                <e p="fonts" t="Include">
+                  <e p="glyphicons-halflings-regular.eot" t="Include" />
+                  <e p="glyphicons-halflings-regular.svg" t="Include" />
+                  <e p="glyphicons-halflings-regular.ttf" t="Include" />
+                  <e p="glyphicons-halflings-regular.woff" t="Include" />
+                  <e p="glyphicons-halflings-regular.woff2" t="Include" />
+                </e>
+                <e p="js" t="Include">
+                  <e p="bootstrap.js" t="Include" />
+                  <e p="bootstrap.min.js" t="Include" />
+                </e>
+              </e>
+              <e p="bootstrap-star-rating" t="Include">
+                <e p="css" t="Include">
+                  <e p="star-rating.css" t="Include" />
+                  <e p="star-rating.min.css" t="Include" />
+                </e>
+                <e p="img" t="Include">
+                  <e p="loading.gif" t="Include" />
+                </e>
+                <e p="js" t="Include">
+                  <e p="locales" t="Include">
+                    <e p="vi-vn.js" t="Include" />
+                  </e>
+                  <e p="star-rating.js" t="Include" />
+                  <e p="star-rating.min.js" t="Include" />
+                </e>
+              </e>
+              <e p="bootstrap-ui-datetime-picker" t="Include">
+                <e p="datetime-picker.js" t="Include" />
+                <e p="datetime-picker.min.js" t="Include" />
+                <e p="datetime-picker.tpls.js" t="Include" />
+              </e>
+              <e p="bootstrap4" t="Include">
+                <e p="css" t="Include">
+                  <e p="bootstrap-grid.css" t="Include" />
+                  <e p="bootstrap-grid.css.map" t="Include" />
+                  <e p="bootstrap-grid.min.css" t="Include" />
+                  <e p="bootstrap-grid.min.css.map" t="Include" />
+                  <e p="bootstrap-reboot.css" t="Include" />
+                  <e p="bootstrap-reboot.css.map" t="Include" />
+                  <e p="bootstrap-reboot.min.css" t="Include" />
+                  <e p="bootstrap-reboot.min.css.map" t="Include" />
+                  <e p="bootstrap.css" t="Include" />
+                  <e p="bootstrap.css.map" t="Include" />
+                  <e p="bootstrap.min.css" t="Include" />
+                  <e p="bootstrap.min.css.map" t="Include" />
+                </e>
+                <e p="js" t="Include">
+                  <e p="bootstrap.bundle.js" t="Include" />
+                  <e p="bootstrap.bundle.js.map" t="Include" />
+                  <e p="bootstrap.bundle.min.js" t="Include" />
+                  <e p="bootstrap.bundle.min.js.map" t="Include" />
+                  <e p="bootstrap.js" t="Include" />
+                  <e p="bootstrap.js.map" t="Include" />
+                  <e p="bootstrap.min.js" t="Include" />
+                  <e p="bootstrap.min.js.map" t="Include" />
+                </e>
+              </e>
+              <e p="font-awesome" t="Include">
+                <e p="css" t="Include">
+                  <e p="font-awesome.css" t="Include" />
+                  <e p="font-awesome.min.css" t="Include" />
+                </e>
+                <e p="fonts" t="Include">
+                  <e p="fontawesome-webfont.eot" t="Include" />
+                  <e p="fontawesome-webfont.svg" t="Include" />
+                  <e p="fontawesome-webfont.ttf" t="Include" />
+                  <e p="fontawesome-webfont.woff" t="Include" />
+                  <e p="fontawesome-webfont.woff2" t="Include" />
+                  <e p="FontAwesome.otf" t="Include" />
+                </e>
+              </e>
+              <e p="i18n" t="Include">
+                <e p="angular-locale_ar-tn.js" t="Include" />
+                <e p="angular-locale_en-us.js" t="Include" />
+                <e p="angular-locale_fr-fr.js" t="Include" />
+                <e p="angular-locale_ko-kr.js" t="Include" />
+                <e p="angular-locale_pt-br.js" t="Include" />
+                <e p="angular-locale_ru-ru.js" t="Include" />
+                <e p="angular-locale_uk-ua.js" t="Include" />
+                <e p="angular-locale_vi-vn.js" t="Include" />
+              </e>
+              <e p="jquery" t="Include">
+                <e p="jquery.js" t="Include" />
+                <e p="jquery.min.js" t="Include" />
+                <e p="jquery.min.map" t="Include" />
+                <e p="jquery.slim.js" t="Include" />
+                <e p="jquery.slim.min.js" t="Include" />
+                <e p="jquery.slim.min.map" t="Include" />
+              </e>
+              <e p="jquery-validation" t="Include">
+                <e p="additional-methods.js" t="Include" />
+                <e p="additional-methods.min.js" t="Include" />
+                <e p="jquery.validate.js" t="Include" />
+                <e p="jquery.validate.min.js" t="Include" />
+              </e>
+              <e p="jquery-validation-unobtrusive" t="Include">
+                <e p="jquery.validate.unobtrusive.js" t="Include" />
+                <e p="jquery.validate.unobtrusive.min.js" t="Include" />
+              </e>
+              <e p="matchheight" t="Include">
+                <e p="jquery.matchHeight-min.js" t="Include" />
+                <e p="jquery.matchHeight.js" t="Include" />
+              </e>
+              <e p="multi-dropdown-menu" t="Include">
+                <e p="css" t="Include">
+                  <e p="bootstrap-4-navbar.css" t="Include" />
+                </e>
+                <e p="js" t="Include">
+                  <e p="bootstrap-4-navbar.js" t="Include" />
+                </e>
+              </e>
+              <e p="ng-file-upload" t="Include">
+                <e p="ng-file-upload.js" t="Include" />
+              </e>
+              <e p="nouislider" t="Include">
+                <e p="nouislider.js" t="Include" />
+                <e p="nouislider.min.css" t="Include" />
+                <e p="nouislider.min.js" t="Include" />
+              </e>
+              <e p="smoothproducts" t="Include">
+                <e p="css" t="Include">
+                  <e p="smoothproducts.css" t="Include" />
+                </e>
+                <e p="js" t="Include">
+                  <e p="smoothproducts.js" t="Include" />
+                  <e p="smoothproducts.min.js" t="Include" />
+                </e>
+              </e>
+              <e p="summernote" t="Include">
+                <e p="font" t="Include">
+                  <e p="summernote.eot" t="Include" />
+                  <e p="summernote.ttf" t="Include" />
+                  <e p="summernote.woff" t="Include" />
+                </e>
+                <e p="lang" t="Include">
+                  <e p="summernote-ar-AR.js" t="Include" />
+                  <e p="summernote-ar-AR.min.js" t="Include" />
+                  <e p="summernote-bg-BG.js" t="Include" />
+                  <e p="summernote-bg-BG.min.js" t="Include" />
+                  <e p="summernote-ca-ES.js" t="Include" />
+                  <e p="summernote-ca-ES.min.js" t="Include" />
+                  <e p="summernote-cs-CZ.js" t="Include" />
+                  <e p="summernote-cs-CZ.min.js" t="Include" />
+                  <e p="summernote-da-DK.js" t="Include" />
+                  <e p="summernote-da-DK.min.js" t="Include" />
+                  <e p="summernote-de-DE.js" t="Include" />
+                  <e p="summernote-de-DE.min.js" t="Include" />
+                  <e p="summernote-es-ES.js" t="Include" />
+                  <e p="summernote-es-ES.min.js" t="Include" />
+                  <e p="summernote-es-EU.js" t="Include" />
+                  <e p="summernote-es-EU.min.js" t="Include" />
+                  <e p="summernote-fa-IR.js" t="Include" />
+                  <e p="summernote-fa-IR.min.js" t="Include" />
+                  <e p="summernote-fi-FI.js" t="Include" />
+                  <e p="summernote-fi-FI.min.js" t="Include" />
+                  <e p="summernote-fr-FR.js" t="Include" />
+                  <e p="summernote-fr-FR.min.js" t="Include" />
+                  <e p="summernote-gl-ES.js" t="Include" />
+                  <e p="summernote-gl-ES.min.js" t="Include" />
+                  <e p="summernote-he-IL.js" t="Include" />
+                  <e p="summernote-he-IL.min.js" t="Include" />
+                  <e p="summernote-hr-HR.js" t="Include" />
+                  <e p="summernote-hr-HR.min.js" t="Include" />
+                  <e p="summernote-hu-HU.js" t="Include" />
+                  <e p="summernote-hu-HU.min.js" t="Include" />
+                  <e p="summernote-id-ID.js" t="Include" />
+                  <e p="summernote-id-ID.min.js" t="Include" />
+                  <e p="summernote-it-IT.js" t="Include" />
+                  <e p="summernote-it-IT.min.js" t="Include" />
+                  <e p="summernote-ja-JP.js" t="Include" />
+                  <e p="summernote-ja-JP.min.js" t="Include" />
+                  <e p="summernote-ko-KR.js" t="Include" />
+                  <e p="summernote-ko-KR.min.js" t="Include" />
+                  <e p="summernote-lt-LT.js" t="Include" />
+                  <e p="summernote-lt-LT.min.js" t="Include" />
+                  <e p="summernote-lt-LV.js" t="Include" />
+                  <e p="summernote-lt-LV.min.js" t="Include" />
+                  <e p="summernote-nb-NO.js" t="Include" />
+                  <e p="summernote-nb-NO.min.js" t="Include" />
+                  <e p="summernote-nl-NL.js" t="Include" />
+                  <e p="summernote-nl-NL.min.js" t="Include" />
+                  <e p="summernote-pl-PL.js" t="Include" />
+                  <e p="summernote-pl-PL.min.js" t="Include" />
+                  <e p="summernote-pt-BR.js" t="Include" />
+                  <e p="summernote-pt-BR.min.js" t="Include" />
+                  <e p="summernote-pt-PT.js" t="Include" />
+                  <e p="summernote-pt-PT.min.js" t="Include" />
+                  <e p="summernote-ro-RO.js" t="Include" />
+                  <e p="summernote-ro-RO.min.js" t="Include" />
+                  <e p="summernote-ru-RU.js" t="Include" />
+                  <e p="summernote-ru-RU.min.js" t="Include" />
+                  <e p="summernote-sk-SK.js" t="Include" />
+                  <e p="summernote-sk-SK.min.js" t="Include" />
+                  <e p="summernote-sl-SI.js" t="Include" />
+                  <e p="summernote-sl-SI.min.js" t="Include" />
+                  <e p="summernote-sr-RS-Latin.js" t="Include" />
+                  <e p="summernote-sr-RS-Latin.min.js" t="Include" />
+                  <e p="summernote-sr-RS.js" t="Include" />
+                  <e p="summernote-sr-RS.min.js" t="Include" />
+                  <e p="summernote-sv-SE.js" t="Include" />
+                  <e p="summernote-sv-SE.min.js" t="Include" />
+                  <e p="summernote-th-TH.js" t="Include" />
+                  <e p="summernote-th-TH.min.js" t="Include" />
+                  <e p="summernote-tr-TR.js" t="Include" />
+                  <e p="summernote-tr-TR.min.js" t="Include" />
+                  <e p="summernote-uk-UA.js" t="Include" />
+                  <e p="summernote-uk-UA.min.js" t="Include" />
+                  <e p="summernote-vi-VN.js" t="Include" />
+                  <e p="summernote-vi-VN.min.js" t="Include" />
+                  <e p="summernote-zh-CN.js" t="Include" />
+                  <e p="summernote-zh-CN.min.js" t="Include" />
+                  <e p="summernote-zh-TW.js" t="Include" />
+                  <e p="summernote-zh-TW.min.js" t="Include" />
+                </e>
+                <e p="plugin" t="Include">
+                  <e p="databasic" t="Include">
+                    <e p="summernote-ext-databasic.css" t="Include" />
+                    <e p="summernote-ext-databasic.js" t="Include" />
+                    <e p="summernote-ext-databasic.min.css" t="Include" />
+                    <e p="summernote-ext-databasic.min.js" t="Include" />
+                  </e>
+                  <e p="hello" t="Include">
+                    <e p="summernote-ext-hello.js" t="Include" />
+                    <e p="summernote-ext-hello.min.js" t="Include" />
+                  </e>
+                  <e p="specialchars" t="Include">
+                    <e p="summernote-ext-specialchars.js" t="Include" />
+                    <e p="summernote-ext-specialchars.min.js" t="Include" />
+                  </e>
+                </e>
+                <e p="summernote.css" t="Include" />
+                <e p="summernote.js" t="Include" />
+                <e p="summernote.min.js" t="Include" />
+              </e>
+              <e p="toastr" t="Include">
+                <e p="toastr.css" t="Include" />
+                <e p="toastr.js" t="Include" />
+                <e p="toastr.min.css" t="Include" />
+                <e p="toastr.min.js" t="Include" />
+              </e>
+              <e p="wnumb" t="Include">
+                <e p="wNumb.js" t="Include" />
+              </e>
+            </e>
+            <e p="Modules" t="Include">
+              <e p=".gitignore" t="Include" />
+            </e>
+            <e p="robots.txt" t="Include" />
+            <e p="themes" t="Include">
+              <e p="generic-theme.png" t="Include" />
+              <e p="SampleTheme" t="Include">
+                <e p="SampleTheme.png" t="Include" />
+                <e p="site.css" t="Include" />
+              </e>
+            </e>
+            <e p="user-content" t="Include">
+              <e p=".gitignore" t="Include" />
+              <e p="no-image.png" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="test" t="Include">
+        <e p="SimplCommerce.Infrastructure.Tests" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="EnumHelperTests.cs" t="Include" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp2.0" t="Include">
+                <e p="SimplCommerce.Infrastructure.Tests.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="SimplCommerce.Infrastructure.Tests.csproj" t="IncludeRecursive" />
+          <e p="StringHelperTests.cs" t="Include" />
+        </e>
+        <e p="SimplCommerce.Module.Cms.Tests" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="Components" t="Include">
+            <e p="CarouselWidgetViewComponentTests.cs" t="Include" />
+          </e>
+          <e p="Controllers" t="Include">
+            <e p="PageControllerTests.cs" t="Include" />
+          </e>
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp2.0" t="Include">
+                <e p="SimplCommerce.Module.Cms.Tests.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="SimplCommerce.Module.Cms.Tests.csproj" t="IncludeRecursive" />
+        </e>
+        <e p="SimplCommerce.Module.Core.Tests" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="Components" t="Include">
+            <e p="DefaultShippingAddressViewComponentTests.cs" t="Include" />
+          </e>
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp2.0" t="Include">
+                <e p="SimplCommerce.Module.Core.Tests.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="SimplCommerce.Module.Core.Tests.csproj" t="IncludeRecursive" />
+          <e p="TestDbAsyncQueryProvider.cs" t="Include" />
+        </e>
+        <e p="SimplCommerce.Module.Pricing.Tests" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="CouponServiceTest.cs" t="Include" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp2.0" t="Include">
+                <e p="SimplCommerce.Module.Pricing.Tests.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="SimplCommerce.Module.Pricing.Tests.csproj" t="IncludeRecursive" />
+          <e p="TestDbAsyncQueryProvider.cs" t="Include" />
+        </e>
+      </e>
+    </e>
+  </component>
+</project>

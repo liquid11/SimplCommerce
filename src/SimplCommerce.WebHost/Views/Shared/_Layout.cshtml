@@ -19,7 +19,7 @@
     <div class="top-bar">
         <div class="container">
             <ul class="nav justify-content-end">
-                @await Html.PartialAsync("_SelectLanguagePartial")
+                @*@await Html.PartialAsync("_SelectLanguagePartial")*@
                 @await Html.PartialAsync("_LoginPartial")
             </ul>
         </div>
@@ -29,7 +29,8 @@
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-4 logo">
                     <a asp-controller="Home" asp-action="Index">
-                        <img alt="SimplCommerce" src="~/modules/core/Logo_SimplCommerce.png" />
+                        <img alt="SimplCommerce" src="~/modules/core/PharmaOnline245.png" />
+                        
                     </a>
                 </div>
                 <div class="col-10 col-md-5 col-lg-7 search-box">
@@ -65,16 +66,16 @@
                     <h4>Information</h4>
                     <vc:menu menu-id="2"></vc:menu>
                 </div>
-                <div class="col-md-6">
+                @*<div class="col-md-6">
                     <h4>SimplCommerce</h4>
                     <p>The first ecommerce system built on .NET Core.</p>
                     <p>Simple to use and easy to customize</p>
                     <p>Cross platform and Open source</p>
-                </div>
+                </div>*@
             </div>
             <hr />
-            <p class="pull-left">&copy; @DateTime.Now.Year - SimplCommerce</p>
-            <p class="pull-right">Powered by <a href="http://www.SimplCommerce.com"><strong>SimplCommerce</strong></a></p>
+            <p class="pull-left">&copy; @DateTime.Now.Year - PharmaOnline</p>
+            <p class="pull-right">Powered by <a href="http://www.PharmaOnline.com"><strong>PharmaOnline</strong></a></p>
         </div>
     </div>
     <div id="shopModal" class="modal fade" tabindex="-1" role="dialog">
