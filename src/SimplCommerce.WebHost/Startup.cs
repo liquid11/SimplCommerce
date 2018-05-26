@@ -10,7 +10,7 @@ using SimplCommerce.Infrastructure;
 using SimplCommerce.Infrastructure.Web;
 using SimplCommerce.Module.Localization;
 using SimplCommerce.WebHost.Extensions;
-
+using Microsoft.AspNetCore.SignalR;
 
 
 namespace SimplCommerce.WebHost
