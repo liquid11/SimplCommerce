@@ -10,6 +10,8 @@ using SimplCommerce.Infrastructure.Web;
 using SimplCommerce.Module.Localization;
 using SimplCommerce.WebHost.Extensions;
 
+
+
 namespace SimplCommerce.WebHost
 {
     public class Startup
