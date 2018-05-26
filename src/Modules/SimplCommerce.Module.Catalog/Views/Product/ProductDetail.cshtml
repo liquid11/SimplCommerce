@@ -1,7 +1,13 @@
 @model SimplCommerce.Module.Catalog.ViewModels.ProductDetail
 
 @{
-    ViewBag.Title = Model.Name;
+    ViewBag.Title = Model.MetaTitle ?? Model.Name;
+}
+
+@section additionalMeta {
+    <meta name="title" content="@ViewBag.Title" />
+    <meta name="keywords" content="@Model.MetaKeywords" />
+    <meta name="description" content="@Model.MetaDescription" />
 }
 
 @section head
@@ -245,7 +251,7 @@
 
 <div>
     <h3>@Localizer["Customer reviews"]</h3>
-    @await Component.InvokeAsync("Review", new { entityId = Model.Id, entityTypeId = (long)3 })
+    @await Component.InvokeAsync("Review", new { entityId = Model.Id, entityTypeId = "Product" })
 </div>
 
 

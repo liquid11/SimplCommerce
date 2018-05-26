@@ -15,7 +15,7 @@ namespace SimplCommerce.Module.Core.Models
 
         public string Name { get; set; }
 
-        public string SeoTitle { get; set; }
+        public string Slug { get; set; }
 
         public string MetaTitle { get; set; }
 
@@ -44,12 +44,12 @@ namespace SimplCommerce.Module.Core.Models
             }
         }
 
-        public virtual User CreatedBy { get; set; }
+        public User CreatedBy { get; set; }
 
         public DateTimeOffset CreatedOn { get; set; }
 
         public DateTimeOffset UpdatedOn { get; set; }
 
-        public virtual User UpdatedBy { get; set; }
+        public User UpdatedBy { get; set; }
     }
 }
