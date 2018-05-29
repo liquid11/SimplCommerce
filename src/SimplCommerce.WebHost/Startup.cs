@@ -42,7 +42,7 @@ namespace SimplCommerce.WebHost
             services.AddCustomizedDataStore(_configuration);
             services.AddCustomizedIdentity();
             services.AddHttpClient();
-
+            
             services.AddSingleton<IStringLocalizerFactory, EfStringLocalizerFactory>();
             services.AddCloudscribePagination();
 
@@ -50,6 +50,16 @@ namespace SimplCommerce.WebHost
                 options => { options.ViewLocationExpanders.Add(new ModuleViewLocationExpander()); });
 
             services.AddCustomizedMvc(GlobalConfiguration.Modules);
+
+            services.AddCors(options => options.AddPolicy("CorsPolicy",
+           builder =>
+           {
+               builder.AllowAnyMethod().AllowAnyHeader()
+                      .WithOrigins("http://localhost:55830")
+                      .AllowCredentials();
+           }));
+
+            services.AddSignalR();
 
             var sp = services.BuildServiceProvider();
             var moduleInitializers = sp.GetServices<IModuleInitializer>();
@@ -80,7 +90,11 @@ namespace SimplCommerce.WebHost
             app.UseCookiePolicy();
             app.UseCustomizedIdentity();
             app.UseCustomizedMvc();
-
+            app.UseCors("CORSPolicy");
+            app.UseSignalR(routes =>
+            {
+                routes.MapHub<ChatHub>("/chathub");
+            });
             var moduleInitializers = app.ApplicationServices.GetServices<IModuleInitializer>();
             foreach (var moduleInitializer in moduleInitializers)
             {

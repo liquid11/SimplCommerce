@@ -1,0 +1,26 @@
+{
+  "name": "SimplCommerce",
+  "version": "1.0.0",
+  "description": "[![Join the chat at https://gitter.im/simplcommerce/SimplCommerce](https://badges.gitter.im/simplcommerce/SimplCommerce.svg)](https://gitter.im/simplcommerce/SimplCommerce?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liquid11/SimplCommerce.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liquid11/SimplCommerce/issues"
+  },
+  "homepage": "https://github.com/liquid11/SimplCommerce#readme",
+  "dependencies": {
+    "@aspnet/signalr": "^1.0.0-rc1-update1"
+  }
+}

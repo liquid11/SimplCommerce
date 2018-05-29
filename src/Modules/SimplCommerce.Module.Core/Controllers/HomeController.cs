@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using SimplCommerce.Module.Core.Services;
 using SimplCommerce.Module.Core.ViewModels;
+using Microsoft.AspNetCore.SignalR;
 
 namespace SimplCommerce.Module.Core.Controllers
 {
