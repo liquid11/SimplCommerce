@@ -15,6 +15,27 @@
     <link simpl-append-version="true" rel="stylesheet" href="~/modules/core/site.css" />
     <link simpl-append-version="true" rel="stylesheet" href="~/modules/core/chatbox.css" />
 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script simpl-append-version="true" src="~/lib/bootstrap4/js/bootstrap.js"></script>
+    <script simpl-append-version="true" src="~/lib/multi-dropdown-menu/js/bootstrap-4-navbar.js"></script>
+    <script simpl-append-version="true" src="~/lib/matchheight/jquery.matchHeight.js"></script>
+    <script simpl-append-version="true" src="~/lib/bootstrap-star-rating/js/star-rating.js"></script>
+    @if (CultureInfo.CurrentCulture.Name == "vi-VN")
+    {
+        <script simpl-append-version="true" src="~/lib/bootstrap-star-rating/js/locales/vi-vn.js"></script>
+    }
+    <script simpl-append-version="true" src="~/modules/core/main.js"></script>
+    <script simpl-append-version="true" src="~/modules/core/chat.js"></script>
+    <script simpl-append-version="true" src="~/modules/core/signalr.js"></script>
+
+    <script simpl-append-version="true" src="~/modules/shopping-cart/add-to-cart.js"></script>
+    <script simpl-append-version="true" src="~/modules/product-comparison/product-comparison.js"></script>
+
+
+
     @RenderSection("head", required: false)
 </head>
 <body>
@@ -31,7 +52,7 @@
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-4 logo">
                     <a asp-controller="Home" asp-action="Index">
-                        <img alt="SimplCommerce" src="~/modules/core/PharmaOnline245.png" />
+                        <img alt="PharmaOnline" src="~/modules/core/PharmaOnline245.png" />
 
                     </a>
                 </div>
@@ -109,6 +130,21 @@
             </div>
 
         }
+        else
+        {
+
+            <script>
+
+                $(document).ready(function () { 
+                    $(".top-bar").remove();
+                    $(".search-box").remove();
+                    $(".cart-btn").remove();
+
+                    $(".footer-content .container .row .col-md-3").remove();
+                });
+            </script>
+
+        }
         <!-- end live-chat -->}
     }
 
@@ -174,24 +210,6 @@
             window.simplGlobalSetting = {};
             window.simplGlobalSetting.lang = '@CultureInfo.CurrentCulture.Name';
     </script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script simpl-append-version="true" src="~/lib/bootstrap4/js/bootstrap.js"></script>
-    <script simpl-append-version="true" src="~/lib/multi-dropdown-menu/js/bootstrap-4-navbar.js"></script>
-    <script simpl-append-version="true" src="~/lib/matchheight/jquery.matchHeight.js"></script>
-    <script simpl-append-version="true" src="~/lib/bootstrap-star-rating/js/star-rating.js"></script>
-    @if (CultureInfo.CurrentCulture.Name == "vi-VN")
-    {
-        <script simpl-append-version="true" src="~/lib/bootstrap-star-rating/js/locales/vi-vn.js"></script>
-    }
-    <script simpl-append-version="true" src="~/modules/core/main.js"></script>
-    <script simpl-append-version="true" src="~/modules/core/chat.js"></script>
-    <script simpl-append-version="true" src="~/modules/core/signalr.js"></script>
-
-    <script simpl-append-version="true" src="~/modules/shopping-cart/add-to-cart.js"></script>
-    <script simpl-append-version="true" src="~/modules/product-comparison/product-comparison.js"></script>
 
     <script>
 

@@ -6,59 +6,66 @@
 //
 // See Es5-chat.js for a Babel transpiled version of the following code:
 
-        $(document).ready(function () {
+$(document).ready(function () {
 
-            var  connection;
+    var connection;
 
-            $("#chat_input").hide();
-            
-            $(".chat-close").click(function () {
-                $(".chat").slideToggle();
-            });
+    $("#chat_input").hide();
 
-            $("#chat_start").click(function () {
+    $(".chat-close").click(function () {
+        $(".chat").slideToggle();
+    });
 
-                console.log("start clicked");
+    $("#chat_start").click(function () {
 
-                $("#chat_intro").hide(1000);
+        console.log("start clicked");
 
-                $("#chat_input").show(1000);
+        $("#chat_intro").hide(1000);
 
-                connection = new signalR.HubConnectionBuilder()
-                    .withUrl("/ChatHub")
-                    .build();
+        $("#chat_input").show(1000);
 
-                connection.on("ReceiveMessage", (user, message) => {
-                    const encodedMsg = user + " says " + message;
-                    const li = document.createElement("li");
-                    li.textContent = encodedMsg;
-                    document.getElementById("messagesList").appendChild(li);
-                });
+        connection = new signalR.HubConnectionBuilder()
+            .withUrl("/ChatHub")
+            .build();
+       
+        //send connection id to the indend user 
 
-
-                //document.getElementById("sendButton").addEventListener("click", event => {
-                //    const user = document.getElementById("userName").value;
-                //    const message = document.getElementById("messageInput").value;
-                //    connection.invoke("SendMessage", user, message).catch(err => console.error(err.toString()));
-                //    event.preventDefault();
-                //});
-
-                connection.start().catch(err => console.error(err.toString()));
-               
-            
-            });
-
-
-            $("#sendButton").click(function () {
-                
-                const user = $("#userName").val();
-                const email = $("#userEmail").val();
-                const message = $("#messageInput").val(); //document.getElementById("messageInput").value;
-                 connection.invoke("SendMessage", user, message).catch(err => console.error(err.toString()));
-                    event.preventDefault();
-
-            });
-            
-
+        connection.on("ReceiveMessage", (user, message) => {
+            const encodedMsg = user + " says " + message;
+            const li = document.createElement("li");
+            li.textContent = encodedMsg;
+            document.getElementById("messagesList").appendChild(li);
         });
+
+
+        //document.getElementById("sendButton").addEventListener("click", event => {
+        //    const user = document.getElementById("userName").value;
+        //    const message = document.getElementById("messageInput").value;
+        //    connection.invoke("SendMessage", user, message).catch(err => console.error(err.toString()));
+        //    event.preventDefault();
+        //});
+
+        connection.start().catch(err => console.error(err.toString()));
+
+
+    });
+
+
+    $("#sendButton").click(function () {
+
+        const user = $("#userName").val();
+        const email = $("#userEmail").val();
+        const message = $("#messageInput").val(); //document.getElementById("messageInput").value;
+        const intendedUser = "doctor";
+        connection.invoke("SendMessage", user, message, intendedUser).catch(err => console.error(err.toString()));
+
+
+
+
+        event.preventDefault();
+
+    });
+
+
+});
 
