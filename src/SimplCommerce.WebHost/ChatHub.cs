@@ -31,13 +31,14 @@ namespace SimplCommerce.WebHost
         }
 
 
-        public async Task SendUserList()
+        public async Task SendList()
         {
+            
 
-            string conId = userList.Find(x => x.UserName == "doctor").ToString();
+            string conId =userList.Find(x => x.UserName == "Doctor").ConnectionId;
 
-
-            await Clients.Client(conId).SendAsync("ReceiveList", userList);
+            //await Clients.All.SendAsync("ReceiveList", Newtonsoft.Json.JsonConvert.SerializeObject(userList));
+            await Clients.Client(conId).SendAsync("ReceiveList", Newtonsoft.Json.JsonConvert.SerializeObject(userList));
 
 
         }

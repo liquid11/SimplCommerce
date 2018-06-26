@@ -112,6 +112,7 @@ namespace SimplCommerce.Module.Catalog.Controllers
             model.CurrentSearchOption.PageSize = _pageSize;
             model.CurrentSearchOption.Page = currentPageNum;
 
+            ViewData["showcategory"] = "true";
             return View(model);
         }
 

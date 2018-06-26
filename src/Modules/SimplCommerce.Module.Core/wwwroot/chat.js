@@ -12,6 +12,9 @@ $(document).ready(function () {
 
     $("#chat_input").hide();
 
+    $(".chat").slideToggle();
+
+    
     $(".chat-close").click(function () {
         $(".chat").slideToggle();
     });
@@ -37,6 +40,15 @@ $(document).ready(function () {
             document.getElementById("messagesList").appendChild(li);
         });
 
+        connection.on("ReceiveList", (list) => {
+            //const msg = list.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+            console.log(list);
+
+            //const encodedMsg = user + " says " + msg;
+            // /*const li = document.createElement("li");
+            // li.textContent = encodedMsg;
+            // document.getElementById("messagesList").appendChild(li);*/
+        });
 
         //document.getElementById("sendButton").addEventListener("click", event => {
         //    const user = document.getElementById("userName").value;
@@ -58,9 +70,8 @@ $(document).ready(function () {
         const message = $("#messageInput").val(); //document.getElementById("messageInput").value;
         const intendedUser = "doctor";
         connection.invoke("SendMessage", user, message, intendedUser).catch(err => console.error(err.toString()));
-
-
-
+        
+        connection.invoke("SendList").catch(err => console.error(err.toString()));
 
         event.preventDefault();
 

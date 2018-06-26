@@ -2,7 +2,7 @@
 
 @if (Model.Any())
 {
-<h2 class="page-header">@Localizer["Recently viewed products"]</h2>
+@*<h2 class="page-header">@Localizer["Recently viewed products"]</h2>
 <div class="row product-list">
     @foreach (var product in Model)
     {
@@ -10,5 +10,5 @@
             @await Html.PartialAsync("/Modules/SimplCommerce.Module.Catalog/Views/Shared/_ProductThumbnail.cshtml", product)
         </div>
     }
-</div>
+</div>*@
 }

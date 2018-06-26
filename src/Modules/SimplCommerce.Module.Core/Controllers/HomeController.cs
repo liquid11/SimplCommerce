@@ -32,15 +32,17 @@ namespace SimplCommerce.Module.Core.Controllers
             model.WidgetInstances = _widgetInstanceService.GetPublished()
                 .OrderBy(x => x.DisplayOrder)
                 .Select(x => new WidgetInstanceViewModel
-            {
-                Id = x.Id,
-                Name = x.Name,
-                ViewComponentName = x.Widget.ViewComponentName,
-                WidgetId = x.WidgetId,
-                WidgetZoneId = x.WidgetZoneId,
-                Data = x.Data,
-                HtmlData = x.HtmlData
-            }).ToList();
+                {
+                    Id = x.Id,
+                    Name = x.Name,
+                    ViewComponentName = x.Widget.ViewComponentName,
+                    WidgetId = x.WidgetId,
+                    WidgetZoneId = x.WidgetZoneId,
+                    Data = x.Data,
+                    HtmlData = x.HtmlData
+                }).ToList();
+
+            ViewData["showcategory"] = "true";
 
             return View(model);
         }

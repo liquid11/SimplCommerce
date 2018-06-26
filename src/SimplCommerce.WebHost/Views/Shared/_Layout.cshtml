@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>@ViewData["Title"] - SimplCommerce</title>
+    <title>@ViewData["Title"] - Pharma Online</title>
     @RenderSection("additionalMeta", false)
 
     <link simpl-append-version="true" rel="stylesheet" href="~/lib/bootstrap4/css/bootstrap.css" />
@@ -23,6 +23,8 @@
     <script simpl-append-version="true" src="~/lib/multi-dropdown-menu/js/bootstrap-4-navbar.js"></script>
     <script simpl-append-version="true" src="~/lib/matchheight/jquery.matchHeight.js"></script>
     <script simpl-append-version="true" src="~/lib/bootstrap-star-rating/js/star-rating.js"></script>
+    <script src="https://swc.cdn.skype.com/sdk/v1/sdk.min.js"></script>
+
     @if (CultureInfo.CurrentCulture.Name == "vi-VN")
     {
         <script simpl-append-version="true" src="~/lib/bootstrap-star-rating/js/locales/vi-vn.js"></script>
@@ -65,20 +67,36 @@
             </div>
         </div>
     </div>
-    <div class="navbar navbar-expand-lg navbar-light bg-light btco-hover-menu main-nav">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarMain">
-                @await Component.InvokeAsync("CategoryMenu")
+
+    @{
+        string crntCtrlr = string.Empty;
+
+        if (ViewData["showcategory"] != null)
+        {
+            crntCtrlr = ViewData["showcategory"].ToString();
+        }
+    }
+
+    @if (crntCtrlr == "true")
+    {
+        <div class="navbar navbar-expand-lg navbar-light bg-light btco-hover-menu main-nav">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarMain">
+                    @await Component.InvokeAsync("CategoryMenu")
+                </div>
             </div>
         </div>
-    </div>
+    }
+
     @*<partial name="_CookieConsentPartial" />*@
     <div class="container body-content">
         @RenderBody()
     </div>
+    @*<div class="skype-button bubble" data-contact-id="arslan.khan9911"></div>*@
+    @*<span class="skype-button rounded" data-contact-id="arslan.khan9911" data-text="Consult Our General Physician" data-color="#98c828"></span>*@
     @{
         if (ViewData["Title"].ToString() != "doctor portal")
         {
@@ -135,7 +153,7 @@
 
             <script>
 
-                $(document).ready(function () { 
+                $(document).ready(function () {
                     $(".top-bar").remove();
                     $(".search-box").remove();
                     $(".cart-btn").remove();
@@ -145,7 +163,7 @@
             </script>
 
         }
-        <!-- end live-chat -->}
+        <!-- end live-chat -->
     }
 
     @*<div id="live-chat">

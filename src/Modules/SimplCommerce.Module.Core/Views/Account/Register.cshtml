@@ -50,7 +50,7 @@
         </form>
     </div>
 
-    <div class="col-md-4">
+    @*<div class="col-md-4">
         <section>
             <h4>@Localizer["Use another service to log in."]</h4>
             <hr />
@@ -60,15 +60,15 @@
                 if (loginProviders.Count == 0)
                 {
                     <div>
-                        @*<p>
+                        <p>
                             There are no external authentication services configured. See <a href="https://go.microsoft.com/fwlink/?LinkID=532715">this article</a>
                             for details on setting up this ASP.NET application to support logging in via external services.
-                        </p>*@
+                        </p>
                     </div>
                 }
                 else
                 {
-                    @*<form asp-controller="Account" asp-action="ExternalLogin" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post" class="form-horizontal">
+                    <form asp-controller="Account" asp-action="ExternalLogin" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post" class="form-horizontal">
                         <div>
                             <p>
                                 @foreach (var provider in loginProviders)
@@ -77,11 +77,11 @@
                                 }
                             </p>
                         </div>
-                    </form>*@
+                    </form>
                 }
             }
         </section>
-    </div>
+    </div>*@
 </div>
 
 @section Scripts {

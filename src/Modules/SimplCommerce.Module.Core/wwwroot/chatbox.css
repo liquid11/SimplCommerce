@@ -71,6 +71,7 @@
     right: 24px;
     position: fixed;
     width: 300px;
+    display: grid;
 }
 
     #live-chat header {

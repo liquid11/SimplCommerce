@@ -43,12 +43,12 @@
             <div class="product-name">
                 <h1 class="">@Model.Name</h1>
             </div>
-            <ul class="list-inline product-ratings">
+            @*<ul class="list-inline product-ratings">
                 <li><input type="hidden" value="@Model.RatingAverage" readonly="readonly" class="rating-loading" step="1" data-size="xs" data-show-clear="false" data-show-caption="false" /></li>
                 <li class="product-review-list">
                     <span>(@Model.ReviewsCount) <a href="#reviews">@Localizer["reviews"]</a> | <a href="#addreview"> @Localizer["Add Review"]</a></span>
                 </li>
-            </ul>
+            </ul>*@
             <div class="product-short-desc">@Html.Raw(Model.ShortDescription)</div>
             @if (Model.HasVariation)
             {
@@ -121,18 +121,18 @@
                                     <button type="button" class="quantity-button" name="add" value="+">+</button>
                                 </div>
                                 <button type="button" disabled="@(!variant.IsAllowToOrder || variant.StockQuantity <= 0)" class="btn btn-lg btn-add-cart">@Localizer["Add to cart"]</button>
-                                <div>
+                                @*<div>
                                     <ul class="list-inline add-to-wishlist">
-                                        @*<li class="wishlist-in">
+                                        <li class="wishlist-in">
                                             <i class="fa fa-heart"></i>
                                             <a href="#">Add to Wishlist</a>
-                                        </li>*@
+                                        </li>
                                         <li class="compare-in">
                                             <i class="fa fa-exchange"></i>
                                             <a href="#" class="add-to-comparison">Add to Compare</a>
                                         </li>
                                     </ul>
-                                </div>
+                                </div>*@
                             </form>
                         </div>
                     </div>
@@ -173,18 +173,18 @@
                             <button type="button" class="quantity-button" name="add" value="+">+</button>
                         </div>
                         <button type="button" disabled="@(!Model.IsAllowToOrder || Model.StockQuantity <= 0)" class="btn btn-lg btn-add-cart">@Localizer["Add to cart"]</button>
-                        <div>
+                        @*<div>
                             <ul class="list-inline add-to-wishlist">
-                                @*<li class="wishlist-in">
+                                <li class="wishlist-in">
                                     <i class="fa fa-heart"></i>
                                     <a href="#">Add to Wishlist</a>
-                                </li>*@
+                                </li>
                                 <li class="compare-in">
                                     <i class="fa fa-exchange"></i>
                                     <a href="#" class="add-to-comparison">Add to Compare</a>
                                 </li>
                             </ul>
-                        </div>
+                        </div>*@
                     </form>
                 </div>
             }
@@ -222,7 +222,7 @@
     }
 </div>
 
-@if (Model.RelatedProducts.Any()) {
+@*@if (Model.RelatedProducts.Any()) {
     <h2 class="page-header">Related Products</h2>
     <div class="row product-list">
         @foreach (var product in Model.RelatedProducts)
@@ -232,7 +232,7 @@
             </div>
         }
     </div>
-}
+}*@
 
 @if (Model.CrossSellProducts.Any())
 {
@@ -249,10 +249,10 @@
 
 @await Component.InvokeAsync("ProductRecentlyViewed", new { productId = Model.Id })
 
-<div>
+@*<div>
     <h3>@Localizer["Customer reviews"]</h3>
     @await Component.InvokeAsync("Review", new { entityId = Model.Id, entityTypeId = "Product" })
-</div>
+</div>*@
 
 
 @section scripts

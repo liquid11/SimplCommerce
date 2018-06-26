@@ -90,6 +90,7 @@ namespace SimplCommerce.Module.Catalog.Controllers
             await _mediator.Publish(new EntityViewed { EntityId = product.Id, EntityTypeId = "Product" });
             _productRepository.SaveChanges();
 
+            ViewData["showcategory"] = "true";
             return View(model);
         }
 
