@@ -15,7 +15,7 @@ namespace SimplCommerce.WebHost.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.1.0-rc1-32029")
+                .HasAnnotation("ProductVersion", "2.1.1-rtm-30846")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -720,7 +720,7 @@ namespace SimplCommerce.WebHost.Migrations
                         new { Id = "Catalog.IsProductPriceIncludeTax", IsVisibleInCommonSettingPage = true, Module = "Catalog", Value = "true" },
                         new { Id = "GoogleAppKey", IsVisibleInCommonSettingPage = false, Module = "Contact", Value = "" },
                         new { Id = "Global.AssetVersion", IsVisibleInCommonSettingPage = true, Module = "Core", Value = "1.0" },
-                        new { Id = "Theme", IsVisibleInCommonSettingPage = true, Module = "Core", Value = "Generic" },
+                        new { Id = "Theme", IsVisibleInCommonSettingPage = false, Module = "Core", Value = "Generic" },
                         new { Id = "SmtpServer", IsVisibleInCommonSettingPage = false, Module = "EmailSenderSmpt", Value = "smtp.gmail.com" },
                         new { Id = "SmtpPort", IsVisibleInCommonSettingPage = false, Module = "EmailSenderSmpt", Value = "587" },
                         new { Id = "SmtpUsername", IsVisibleInCommonSettingPage = false, Module = "EmailSenderSmpt", Value = "" },
@@ -916,10 +916,10 @@ namespace SimplCommerce.WebHost.Migrations
                     b.ToTable("Core_Role");
 
                     b.HasData(
-                        new { Id = 1L, ConcurrencyStamp = "e7fb7383-921d-4788-8f33-665d58b008db", Name = "admin", NormalizedName = "ADMIN" },
-                        new { Id = 2L, ConcurrencyStamp = "583097af-9468-47f6-96e9-2f7d68da157f", Name = "customer", NormalizedName = "CUSTOMER" },
-                        new { Id = 3L, ConcurrencyStamp = "ece15d63-ccdf-4e9a-94e8-019e9a4782bb", Name = "guest", NormalizedName = "GUEST" },
-                        new { Id = 4L, ConcurrencyStamp = "3d7d212e-df7a-4a27-b871-da99ba07e4d5", Name = "vendor", NormalizedName = "VENDOR" }
+                        new { Id = 1L, ConcurrencyStamp = "4776a1b2-dbe4-4056-82ec-8bed211d1454", Name = "admin", NormalizedName = "ADMIN" },
+                        new { Id = 2L, ConcurrencyStamp = "00d172be-03a0-4856-8b12-26d63fcf4374", Name = "customer", NormalizedName = "CUSTOMER" },
+                        new { Id = 3L, ConcurrencyStamp = "d4754388-8355-4018-b728-218018836817", Name = "guest", NormalizedName = "GUEST" },
+                        new { Id = 4L, ConcurrencyStamp = "71f10604-8c4d-4a7d-ac4a-ffefb11cefeb", Name = "vendor", NormalizedName = "VENDOR" }
                     );
                 });
 
@@ -991,6 +991,8 @@ namespace SimplCommerce.WebHost.Migrations
 
                     b.Property<bool>("PhoneNumberConfirmed");
 
+                    b.Property<string>("RefreshTokenHash");
+
                     b.Property<string>("SecurityStamp");
 
                     b.Property<bool>("TwoFactorEnabled");
@@ -1023,8 +1025,8 @@ namespace SimplCommerce.WebHost.Migrations
                     b.ToTable("Core_User");
 
                     b.HasData(
-                        new { Id = 2L, AccessFailedCount = 0, ConcurrencyStamp = "43975a72-0ecf-4d38-b07e-0eaa6e2d8a3d", CreatedOn = new DateTimeOffset(new DateTime(2018, 5, 22, 20, 57, 9, 718, DateTimeKind.Unspecified), new TimeSpan(0, 7, 0, 0, 0)), Email = "system@simplcommerce.com", EmailConfirmed = false, FullName = "System User", IsDeleted = true, LockoutEnabled = false, NormalizedEmail = "SYSTEM@SIMPLCOMMERCE.COM", NormalizedUserName = "SYSTEM@SIMPLCOMMERCE.COM", PasswordHash = "AQAAAAEAACcQAAAAEAEqSCV8Bpg69irmeg8N86U503jGEAYf75fBuzvL00/mr/FGEsiUqfR0rWBbBUwqtw==", PhoneNumberConfirmed = false, SecurityStamp = "0a88c82c-4a89-48b7-9a2d-0175e3398c99", TwoFactorEnabled = false, UpdatedOn = new DateTimeOffset(new DateTime(2018, 5, 22, 20, 57, 9, 718, DateTimeKind.Unspecified), new TimeSpan(0, 7, 0, 0, 0)), UserGuid = new Guid("29c7b4c1-87d3-44b8-b25c-82ddf296275a"), UserName = "system@simplcommerce.com" },
-                        new { Id = 10L, AccessFailedCount = 0, ConcurrencyStamp = "a6a8aea4-cce8-4f85-8f90-c3c483374817", CreatedOn = new DateTimeOffset(new DateTime(2018, 5, 22, 20, 57, 9, 720, DateTimeKind.Unspecified), new TimeSpan(0, 7, 0, 0, 0)), Email = "admin@simplcommerce.com", EmailConfirmed = false, FullName = "Shop Admin", IsDeleted = false, LockoutEnabled = false, NormalizedEmail = "ADMIN@SIMPLCOMMERCE.COM", NormalizedUserName = "ADMIN@SIMPLCOMMERCE.COM", PasswordHash = "AQAAAAEAACcQAAAAEAEqSCV8Bpg69irmeg8N86U503jGEAYf75fBuzvL00/mr/FGEsiUqfR0rWBbBUwqtw==", PhoneNumberConfirmed = false, SecurityStamp = "6f35b0d1-9e0e-4843-99ef-f49ec9299b38", TwoFactorEnabled = false, UpdatedOn = new DateTimeOffset(new DateTime(2018, 5, 22, 20, 57, 9, 720, DateTimeKind.Unspecified), new TimeSpan(0, 7, 0, 0, 0)), UserGuid = new Guid("5d4927ad-71e4-490c-87f1-65b67af3f402"), UserName = "admin@simplcommerce.com" }
+                        new { Id = 2L, AccessFailedCount = 0, ConcurrencyStamp = "101cd6ae-a8ef-4a37-97fd-04ac2dd630e4", CreatedOn = new DateTimeOffset(new DateTime(2018, 5, 29, 4, 33, 39, 189, DateTimeKind.Unspecified), new TimeSpan(0, 7, 0, 0, 0)), Email = "system@simplcommerce.com", EmailConfirmed = false, FullName = "System User", IsDeleted = true, LockoutEnabled = false, NormalizedEmail = "SYSTEM@SIMPLCOMMERCE.COM", NormalizedUserName = "SYSTEM@SIMPLCOMMERCE.COM", PasswordHash = "AQAAAAEAACcQAAAAEAEqSCV8Bpg69irmeg8N86U503jGEAYf75fBuzvL00/mr/FGEsiUqfR0rWBbBUwqtw==", PhoneNumberConfirmed = false, SecurityStamp = "a9565acb-cee6-425f-9833-419a793f5fba", TwoFactorEnabled = false, UpdatedOn = new DateTimeOffset(new DateTime(2018, 5, 29, 4, 33, 39, 189, DateTimeKind.Unspecified), new TimeSpan(0, 7, 0, 0, 0)), UserGuid = new Guid("5f72f83b-7436-4221-869c-1b69b2e23aae"), UserName = "system@simplcommerce.com" },
+                        new { Id = 10L, AccessFailedCount = 0, ConcurrencyStamp = "c83afcbc-312c-4589-bad7-8686bd4754c0", CreatedOn = new DateTimeOffset(new DateTime(2018, 5, 29, 4, 33, 39, 190, DateTimeKind.Unspecified), new TimeSpan(0, 7, 0, 0, 0)), Email = "admin@simplcommerce.com", EmailConfirmed = false, FullName = "Shop Admin", IsDeleted = false, LockoutEnabled = false, NormalizedEmail = "ADMIN@SIMPLCOMMERCE.COM", NormalizedUserName = "ADMIN@SIMPLCOMMERCE.COM", PasswordHash = "AQAAAAEAACcQAAAAEAEqSCV8Bpg69irmeg8N86U503jGEAYf75fBuzvL00/mr/FGEsiUqfR0rWBbBUwqtw==", PhoneNumberConfirmed = false, SecurityStamp = "d6847450-47f0-4c7a-9fed-0c66234bf61f", TwoFactorEnabled = false, UpdatedOn = new DateTimeOffset(new DateTime(2018, 5, 29, 4, 33, 39, 190, DateTimeKind.Unspecified), new TimeSpan(0, 7, 0, 0, 0)), UserGuid = new Guid("ed8210c3-24b0-4823-a744-80078cf12eb4"), UserName = "admin@simplcommerce.com" }
                     );
                 });
 
@@ -1117,12 +1119,12 @@ namespace SimplCommerce.WebHost.Migrations
                     b.ToTable("Core_Widget");
 
                     b.HasData(
-                        new { Id = "CategoryWidget", CreateUrl = "widget-category-create", CreatedOn = new DateTimeOffset(new DateTime(2018, 5, 22, 20, 57, 9, 661, DateTimeKind.Unspecified), new TimeSpan(0, 7, 0, 0, 0)), EditUrl = "widget-category-edit", IsPublished = false, Name = "Category Widget", ViewComponentName = "CategoryWidget" },
-                        new { Id = "ProductWidget", CreateUrl = "widget-product-create", CreatedOn = new DateTimeOffset(new DateTime(2018, 5, 22, 20, 57, 9, 664, DateTimeKind.Unspecified), new TimeSpan(0, 7, 0, 0, 0)), EditUrl = "widget-product-edit", IsPublished = false, Name = "Product Widget", ViewComponentName = "ProductWidget" },
-                        new { Id = "SimpleProductWidget", CreateUrl = "widget-simple-product-create", CreatedOn = new DateTimeOffset(new DateTime(2018, 5, 22, 20, 57, 9, 664, DateTimeKind.Unspecified), new TimeSpan(0, 7, 0, 0, 0)), EditUrl = "widget-simple-product-edit", IsPublished = false, Name = "Simple Product Widget", ViewComponentName = "SimpleProductWidget" },
-                        new { Id = "HtmlWidget", CreateUrl = "widget-html-create", CreatedOn = new DateTimeOffset(new DateTime(2018, 5, 22, 20, 57, 9, 667, DateTimeKind.Unspecified), new TimeSpan(0, 7, 0, 0, 0)), EditUrl = "widget-html-edit", IsPublished = false, Name = "Html Widget", ViewComponentName = "HtmlWidget" },
-                        new { Id = "CarouselWidget", CreateUrl = "widget-carousel-create", CreatedOn = new DateTimeOffset(new DateTime(2018, 5, 22, 20, 57, 9, 667, DateTimeKind.Unspecified), new TimeSpan(0, 7, 0, 0, 0)), EditUrl = "widget-carousel-edit", IsPublished = false, Name = "Carousel Widget", ViewComponentName = "CarouselWidget" },
-                        new { Id = "SpaceBarWidget", CreateUrl = "widget-spacebar-create", CreatedOn = new DateTimeOffset(new DateTime(2018, 5, 22, 20, 57, 9, 667, DateTimeKind.Unspecified), new TimeSpan(0, 7, 0, 0, 0)), EditUrl = "widget-spacebar-edit", IsPublished = false, Name = "SpaceBar Widget", ViewComponentName = "SpaceBarWidget" }
+                        new { Id = "CategoryWidget", CreateUrl = "widget-category-create", CreatedOn = new DateTimeOffset(new DateTime(2018, 5, 29, 4, 33, 39, 160, DateTimeKind.Unspecified), new TimeSpan(0, 7, 0, 0, 0)), EditUrl = "widget-category-edit", IsPublished = false, Name = "Category Widget", ViewComponentName = "CategoryWidget" },
+                        new { Id = "ProductWidget", CreateUrl = "widget-product-create", CreatedOn = new DateTimeOffset(new DateTime(2018, 5, 29, 4, 33, 39, 163, DateTimeKind.Unspecified), new TimeSpan(0, 7, 0, 0, 0)), EditUrl = "widget-product-edit", IsPublished = false, Name = "Product Widget", ViewComponentName = "ProductWidget" },
+                        new { Id = "SimpleProductWidget", CreateUrl = "widget-simple-product-create", CreatedOn = new DateTimeOffset(new DateTime(2018, 5, 29, 4, 33, 39, 163, DateTimeKind.Unspecified), new TimeSpan(0, 7, 0, 0, 0)), EditUrl = "widget-simple-product-edit", IsPublished = false, Name = "Simple Product Widget", ViewComponentName = "SimpleProductWidget" },
+                        new { Id = "HtmlWidget", CreateUrl = "widget-html-create", CreatedOn = new DateTimeOffset(new DateTime(2018, 5, 29, 4, 33, 39, 164, DateTimeKind.Unspecified), new TimeSpan(0, 7, 0, 0, 0)), EditUrl = "widget-html-edit", IsPublished = false, Name = "Html Widget", ViewComponentName = "HtmlWidget" },
+                        new { Id = "CarouselWidget", CreateUrl = "widget-carousel-create", CreatedOn = new DateTimeOffset(new DateTime(2018, 5, 29, 4, 33, 39, 164, DateTimeKind.Unspecified), new TimeSpan(0, 7, 0, 0, 0)), EditUrl = "widget-carousel-edit", IsPublished = false, Name = "Carousel Widget", ViewComponentName = "CarouselWidget" },
+                        new { Id = "SpaceBarWidget", CreateUrl = "widget-spacebar-create", CreatedOn = new DateTimeOffset(new DateTime(2018, 5, 29, 4, 33, 39, 164, DateTimeKind.Unspecified), new TimeSpan(0, 7, 0, 0, 0)), EditUrl = "widget-spacebar-edit", IsPublished = false, Name = "SpaceBar Widget", ViewComponentName = "SpaceBarWidget" }
                     );
                 });
 
@@ -1254,15 +1256,20 @@ namespace SimplCommerce.WebHost.Migrations
 
             modelBuilder.Entity("SimplCommerce.Module.Localization.Models.Culture", b =>
                 {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                    b.Property<string>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<bool>("IsDefault");
 
                     b.Property<string>("Name");
 
                     b.HasKey("Id");
 
                     b.ToTable("Localization_Culture");
+
+                    b.HasData(
+                        new { Id = "en-US", IsDefault = true, Name = "English (US)" }
+                    );
                 });
 
             modelBuilder.Entity("SimplCommerce.Module.Localization.Models.Resource", b =>
@@ -1271,7 +1278,7 @@ namespace SimplCommerce.WebHost.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<long>("CultureId");
+                    b.Property<string>("CultureId");
 
                     b.Property<string>("Key");
 
@@ -1904,10 +1911,10 @@ namespace SimplCommerce.WebHost.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("ShippingProvider");
+                    b.ToTable("Shipping_ShippingProvider");
 
                     b.HasData(
-                        new { Id = "FreeShip", AdditionalSettings = "{MinimumOrderAmount : 100}", ConfigureUrl = "shipping-free-config", IsEnabled = true, Name = "Free Ship", ShippingPriceServiceTypeName = "SimplCommerce.Module.ShippingFree.Services.FreeShippingServiceProvider,SimplCommerce.Module.ShippingFree", ToAllShippingEnabledCountries = true, ToAllShippingEnabledStatesOrProvinces = true },
+                        new { Id = "FreeShip", AdditionalSettings = "{MinimumOrderAmount : 100}", ConfigureUrl = "", IsEnabled = true, Name = "Free Ship", ShippingPriceServiceTypeName = "SimplCommerce.Module.ShippingFree.Services.FreeShippingServiceProvider,SimplCommerce.Module.ShippingFree", ToAllShippingEnabledCountries = true, ToAllShippingEnabledStatesOrProvinces = true },
                         new { Id = "TableRate", ConfigureUrl = "shipping-table-rate-config", IsEnabled = true, Name = "Table Rate", ShippingPriceServiceTypeName = "SimplCommerce.Module.ShippingTableRate.Services.TableRateShippingServiceProvider,SimplCommerce.Module.ShippingTableRate", ToAllShippingEnabledCountries = true, ToAllShippingEnabledStatesOrProvinces = true }
                     );
                 });
@@ -1920,6 +1927,8 @@ namespace SimplCommerce.WebHost.Migrations
 
                     b.Property<string>("CountryId");
 
+                    b.Property<long?>("DistrictId");
+
                     b.Property<decimal>("MinOrderSubtotal");
 
                     b.Property<string>("Note");
@@ -1928,9 +1937,13 @@ namespace SimplCommerce.WebHost.Migrations
 
                     b.Property<long?>("StateOrProvinceId");
 
+                    b.Property<string>("ZipCode");
+
                     b.HasKey("Id");
 
                     b.HasIndex("CountryId");
+
+                    b.HasIndex("DistrictId");
 
                     b.HasIndex("StateOrProvinceId");
 
@@ -2019,8 +2032,6 @@ namespace SimplCommerce.WebHost.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("CountryId");
-
-                    b.Property<string>("Name");
 
                     b.Property<decimal>("Rate");
 
@@ -2663,6 +2674,11 @@ namespace SimplCommerce.WebHost.Migrations
                     b.HasOne("SimplCommerce.Module.Core.Models.Country", "Country")
                         .WithMany()
                         .HasForeignKey("CountryId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.HasOne("SimplCommerce.Module.Core.Models.District", "District")
+                        .WithMany()
+                        .HasForeignKey("DistrictId")
                         .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("SimplCommerce.Module.Core.Models.StateOrProvince", "StateOrProvince")

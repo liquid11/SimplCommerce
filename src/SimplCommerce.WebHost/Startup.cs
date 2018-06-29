@@ -40,7 +40,7 @@ namespace SimplCommerce.WebHost
             });
 
             services.AddCustomizedDataStore(_configuration);
-            services.AddCustomizedIdentity();
+            services.AddCustomizedIdentity(_configuration);
             services.AddHttpClient();
             
             services.AddSingleton<IStringLocalizerFactory, EfStringLocalizerFactory>();
@@ -80,10 +80,16 @@ namespace SimplCommerce.WebHost
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
+                app.UseWhen(
+                    context => !context.Request.Path.StartsWithSegments("/api"),
+                    a => a.UseExceptionHandler("/Home/Error")
+                );
             }
 
-            app.UseStatusCodePagesWithReExecute("/Home/ErrorWithCode/{0}");
+            app.UseWhen(
+                context => !context.Request.Path.StartsWithSegments("/api"),
+                a => a.UseStatusCodePagesWithReExecute("/Home/ErrorWithCode/{0}")
+            );
 
             app.UseCustomizedRequestLocalization();
             app.UseCustomizedStaticFiles(env);

@@ -6,9 +6,6 @@ namespace SimplCommerce.Module.Tax.ViewModels
     {
         public long Id { get; set; }
 
-        [Required]
-        public string Name { get; set; }
-
         [Range(1, long.MaxValue, ErrorMessage = "Tax Class is required")]
         public long TaxClassId { get; set; }
 

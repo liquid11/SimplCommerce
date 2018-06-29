@@ -21,13 +21,13 @@ http://demo.simplcommerce.com
 #### Prerequisites
 
 - SQL Server
-- [Visual Studio 2017 version 15.7 with .NET Core SDK 2.1](https://www.microsoft.com/net/core/)
+- [Visual Studio 2017 version 15.7 with .NET Core SDK 2.1.1](https://www.microsoft.com/net/download/all)
+- Node.js (LTS)
 
 #### Steps to run
 
 - Update the connection string in appsettings.json in SimplCommerce.WebHost
 - Build whole solution.
-- In the Task Runner Explorer, right click on the "copy-modules" task and Run.
 - Open Package Manager Console Window and type "Update-Database" then press "Enter". This action will create database schema.
 - In Visual Studio, press "Control + F5".
 - The back-office can access via /Admin using the pre-created account: admin@simplcommerce.com, 1qazZAQ!
@@ -37,8 +37,8 @@ http://demo.simplcommerce.com
 #### Prerequisite
 
 - PostgreSQL
-- NodeJS
-- [.NET Core SDK 2.1](https://www.microsoft.com/net/core/)
+- [.NET Core SDK 2.1.1](https://www.microsoft.com/net/download/all)
+- Node.js (LTS)
 
 #### Steps to run
 
@@ -48,12 +48,12 @@ http://demo.simplcommerce.com
 - Open browser, open http://localhost:5000. The back-office can access via /Admin using the pre-created account: admin@simplcommerce.com, 1qazZAQ!
 
 ## Technologies and frameworks used:
-- ASP.NET MVC Core 2.1
-- Entity Framework Core 2.1
-- ASP.NET Identity Core 2.1
-- Autofac 4.2.0
+- ASP.NET MVC Core 2.1.1
+- Entity Framework Core 2.1.1
+- ASP.NET Identity Core 2.1.1
+- Autofac 4.2.2
 - Angular 1.6.3
-- MediatR 3.0.1 for domain event
+- MediatR 5.0.1 for domain event
 
 ## Docs
 
@@ -65,8 +65,13 @@ https://github.com/simplcommerce/SimplCommerce/wiki/Roadmap
 
 ## How to contribute
 
+- Star this project on GitHub.
 - Report bugs or suggest features by create new issues or add comments to issues
 - Submit pull requests
+- Spread the word by blogging about SimplCommerce or sharing it on social networks
+- Donate us 
+
+     [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JWYGHJQSYLVVQ)
 
 ## License
 
