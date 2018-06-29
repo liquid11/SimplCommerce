@@ -101,15 +101,15 @@ namespace SimplCommerce.WebHost.Extensions
         public static IApplicationBuilder UseCustomizedRequestLocalization(this IApplicationBuilder app)
         {
             var cultureRepository = app.ApplicationServices.GetRequiredService<IRepositoryWithTypedId<Culture, string>>();
-            var cultures = cultureRepository.Query().ToList();
+           var cultures = cultureRepository.Query().ToList();
 
-            GlobalConfiguration.SimpleCultures = cultures.Select(x => new SimpleCulture { Id = x.Id, Name = x.Name }).ToList();
-            var supportedCultures = cultures.Select(x => new CultureInfo(x.Id)).ToList();
-            var defaultCulture = cultures.Where(x => x.IsDefault).Select(x => new CultureInfo(x.Id)).FirstOrDefault();
-            if(defaultCulture == null)
-            {
-                defaultCulture = new CultureInfo("en-US");
-            }
+            //GlobalConfiguration.SimpleCultures = cultures.Select(x => new SimpleCulture { Id = x.Id, Name = x.Name }).ToList();
+           var supportedCultures = cultures.Select(x => new CultureInfo(x.Id)).ToList();
+           // var defaultCulture = cultures.Where(x => x.IsDefault).Select(x => new CultureInfo(x.Id)).FirstOrDefault();
+            //if(defaultCulture == null)
+            //{
+              var   defaultCulture = new CultureInfo("en-US");
+            //}
 
             app.UseRequestLocalization(new RequestLocalizationOptions
             {

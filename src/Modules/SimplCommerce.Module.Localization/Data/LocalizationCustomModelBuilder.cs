@@ -9,7 +9,7 @@ namespace SimplCommerce.Module.Localization.Data
         public void Build(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Culture>().HasData(
-               new Culture("en-US") { Name = "English (US)", IsDefault = true }
+               new Culture("en-US") { Name = "English (US)"/*, IsDefault = true*/ }
             );
         }
     }
