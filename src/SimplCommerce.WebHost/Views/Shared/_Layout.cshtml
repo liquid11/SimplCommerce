@@ -95,13 +95,13 @@
     <div class="container body-content">
         @RenderBody()
     </div>
-    @*<div class="skype-button bubble" data-contact-id="arslan.khan9911"></div>*@
+    <div class="skype-button bubble" data-contact-id="arslan.khan9911"></div>
     @*<span class="skype-button rounded" data-contact-id="arslan.khan9911" data-text="Consult Our General Physician" data-color="#98c828"></span>*@
     @{
         if (ViewData["Title"].ToString() != "doctor portal")
         {
 
-            <div id="live-chat">
+            @*<div id="live-chat">
 
                 <header class="clearfix">
 
@@ -109,7 +109,7 @@
 
                     <h4>Consult Our General Physician</h4>
 
-                    @*<span class="chat-message-counter">3</span>*@
+                    <span class="chat-message-counter">3</span>
 
                 </header>
 
@@ -135,7 +135,7 @@
 
                             <div id="chat_input" style="display:none;">
                                 <input type="text" id="messageInput" placeholder="Type your message…" />
-                                @*<input type="text" placeholder="Type your message…" hidden>*@
+                                <input type="text" placeholder="Type your message…" hidden>
                                 <br />
                                 <input type="button" id="sendButton" value="Send" />
                                 <input type="hidden">
@@ -144,14 +144,14 @@
 
                     </form>
 
-                </div> <!-- end chat -->
-            </div>
+                </div>
+            </div>*@
 
         }
         else
         {
 
-            <script>
+            @*<script>
 
                 $(document).ready(function () {
                     $(".top-bar").remove();
@@ -160,7 +160,7 @@
 
                     $(".footer-content .container .row .col-md-3").remove();
                 });
-            </script>
+            </script>*@
 
         }
         <!-- end live-chat -->
