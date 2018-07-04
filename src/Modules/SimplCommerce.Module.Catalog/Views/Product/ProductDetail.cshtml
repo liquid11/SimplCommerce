@@ -49,7 +49,7 @@
                     <span>(@Model.ReviewsCount) <a href="#reviews">@Localizer["reviews"]</a> | <a href="#addreview"> @Localizer["Add Review"]</a></span>
                 </li>
             </ul>*@
-            <div class="product-short-desc">@Html.Raw(Model.ShortDescription)</div>
+            @*<div class="product-short-desc">@Html.Raw(Model.ShortDescription)</div>*@
             @if (Model.HasVariation)
             {
                 <form>
@@ -120,7 +120,7 @@
                                     <input type="text" class="quantity-field" readonly="readonly" name="qty" value="1">
                                     <button type="button" class="quantity-button" name="add" value="+">+</button>
                                 </div>
-                                <button type="button" disabled="@(!variant.IsAllowToOrder || variant.StockQuantity <= 0)" class="btn btn-lg btn-add-cart">@Localizer["Add to cart"]</button>
+                                <button type="button" disabled="@(!variant.IsAllowToOrder || variant.StockQuantity <= 0 || !User.IsInRole("vendor"))" class="btn btn-lg btn-add-cart">@Localizer["Add to cart"]</button>
                                 @*<div>
                                     <ul class="list-inline add-to-wishlist">
                                         <li class="wishlist-in">
@@ -172,7 +172,7 @@
                             <input type="text" class="quantity-field" readonly="readonly" name="qty" value="1">
                             <button type="button" class="quantity-button" name="add" value="+">+</button>
                         </div>
-                        <button type="button" disabled="@(!Model.IsAllowToOrder || Model.StockQuantity <= 0)" class="btn btn-lg btn-add-cart">@Localizer["Add to cart"]</button>
+                        <button type="button" disabled="@(!Model.IsAllowToOrder || Model.StockQuantity <= 0 || !User.IsInRole("pharmacist")))" class="btn btn-lg btn-add-cart">@Localizer["Add to cart"]</button>
                         @*<div>
                             <ul class="list-inline add-to-wishlist">
                                 <li class="wishlist-in">
@@ -207,7 +207,7 @@
     }
     @if (Model.Attributes.Any())
     {
-        <div>
+        @*<div>
             <h3>@Localizer["Product specification"]</h3>
             <table class="table table-striped">
                 @foreach (var attribute in Model.Attributes)
@@ -218,7 +218,7 @@
                     </tr>
                 }
             </table>
-        </div>
+        </div>*@
     }
 </div>
 

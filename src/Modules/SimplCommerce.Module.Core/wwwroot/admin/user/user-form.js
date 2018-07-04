@@ -1,4 +1,4 @@
-﻿ /*global angular*/
+﻿/*global angular*/
 (function () {
     angular
         .module('simplAdmin.core')
@@ -60,12 +60,17 @@
 
         function getVendors() {
             userService.getVendors().then(function (result) {
+
+
                 vm.vendors = result.data;
             });
         }
 
         function getRoles() {
             userService.getRoles().then(function (result) {
+
+              // TODO: change vendor to pharmacist 
+
                 vm.roles = result.data;
             });
         }
