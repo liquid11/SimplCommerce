@@ -15,7 +15,8 @@ using SimplCommerce.Module.Orders.Events;
 
 namespace SimplCommerce.Module.Orders.Controllers
 {
-    [Authorize(Roles = "admin, vendor")]
+    //[Authorize(Roles = "admin,vendor,pharmacist")]
+    [Authorize(Roles = "admin,pharmacist")]
     [Route("api/orders")]
     public class OrderApiController : Controller
     {

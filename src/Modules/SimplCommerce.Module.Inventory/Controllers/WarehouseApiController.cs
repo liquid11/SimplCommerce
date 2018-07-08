@@ -11,7 +11,8 @@ using SimplCommerce.Module.Inventory.ViewModels;
 
 namespace SimplCommerce.Module.Inventory.Controllers
 {
-    [Authorize(Roles = "admin")]
+    //[Authorize(Roles = "admin")]
+    [Authorize(Roles = "admin,pharmacist")]
     [Route("api/warehouses")]
     public class WarehouseApiController : Controller
     {

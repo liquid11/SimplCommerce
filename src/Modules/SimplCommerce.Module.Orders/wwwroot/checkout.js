@@ -33,7 +33,7 @@
             success: function (data) {
                 var $shippingMethods = $('#shippingMethods');
                 $shippingMethods.empty();
-                if (data.shippingPrices.length > 0) {
+                if (data.shippingPrices.length >= 0) {
                     $.each(data.shippingPrices, function (index, value) {
                         $shippingMethods.append('<div class="radio"> \
                         <label> \

@@ -1,14 +1,14 @@
 ﻿@model SimplCommerce.Module.Catalog.ViewModels.ProductThumbnail
 
 <div class="card mb-4">
-    <a href="~/@Model.Slug">
-        <img alt="@Model.Name" class="card-img-top" src="@Model.ThumbnailUrl">
+    <a href="~/@Model.Slug" style="text-align:center;">
+        <img alt="@Model.Name" class="card-img-top" style="width:60px;" src="@Model.ThumbnailUrl">
         <div class="card-body">
             <h5 class="card-title product-name">@Model.Name</h5>
             <p class="card-text product-price">
                 @if (Model.IsCallForPricing)
                 {
-                    @Localizer["Call for pricing"]
+                    @Localizer["Prescription required"]
                 }
                 else
                 {
@@ -22,14 +22,14 @@
                 }
             </p>
             @*<ul class="list-inline product-ratings">
-                <li><input type="hidden" value="@Model.RatingAverage" readonly="readonly" class="rating-loading" step="1" data-size="xs" data-show-clear="false" data-show-caption="false" /></li>
-                @if (Model.ReviewsCount > 0)
-                {
-                    <li class="product-review-list">
-                        <span>(@Model.ReviewsCount reviews)</span>
-                    </li>
-                }
-            </ul>*@
+                    <li><input type="hidden" value="@Model.RatingAverage" readonly="readonly" class="rating-loading" step="1" data-size="xs" data-show-clear="false" data-show-caption="false" /></li>
+                    @if (Model.ReviewsCount > 0)
+                    {
+                        <li class="product-review-list">
+                            <span>(@Model.ReviewsCount reviews)</span>
+                        </li>
+                    }
+                </ul>*@
         </div>
     </a>
 </div>

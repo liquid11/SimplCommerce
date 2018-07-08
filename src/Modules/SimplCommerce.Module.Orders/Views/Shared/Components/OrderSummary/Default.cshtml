@@ -30,21 +30,21 @@
         <td>@Localizer["Subtotal"]</td>
         <td colspan="2" class="text-right">@Model.SubTotal.ToString("C")<input type="hidden" id="orderSubtotal" value="@Model.SubTotal" /></td>
     </tr>
-    <tr>
+    @*<tr>
         <td>@Localizer["Shipping"]</td>
         <td colspan="2" id="orderSummaryShipping" class="text-right">@Model.ShippingAmountString</td>
-    </tr>
+    </tr>*@
     @if (!Model.IsProductPriceIncludeTax)
     {
-    <tr>
+    @*<tr>
         <td>Tax</td>
         <td colspan="2" id="orderSummaryTax" class="text-right">@Model.TaxAmountString</td>
-    </tr>
+    </tr>*@
     }
-    <tr>
+    @*<tr>
         <td>@Localizer["Discount"]</td>
         <td colspan="2" class="text-right">@Model.Discount.ToString("C")</td>
-    </tr>
+    </tr>*@
     <tr>
         <td><strong>@Localizer["Order Total"]</strong>@if (Model.IsProductPriceIncludeTax) { <span> (@Localizer["VAT included"])</span>}</td>
         <td colspan="2" class="text-right"><strong id="orderTotal">@Model.OrderTotal.ToString("C")</strong></td>

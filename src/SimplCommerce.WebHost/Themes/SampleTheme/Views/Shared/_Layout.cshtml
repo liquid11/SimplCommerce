@@ -21,7 +21,7 @@
     <div class="top-bar">
         <div class="container">
             <ul class="nav justify-content-end">
-          @* @await Html.PartialAsync("_SelectLanguagePartial")*@
+                @* @await Html.PartialAsync("_SelectLanguagePartial")*@
                 @await Html.PartialAsync("_LoginPartial")
             </ul>
         </div>
@@ -31,15 +31,24 @@
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-4 logo">
                     <a asp-controller="Home" asp-action="Index">
-                                                <img alt="SimplCommerce" src="~/mod ules/core//modules/core/PharmaOnline245.jpg" />
+                        <img alt="SimplCommerce" src="~/mod ules/core//modules/core/PharmaOnline245.jpg" />
                     </a>
                 </div>
                 <div class="col-10 col-md-5 col-lg-7 search-box">
                     @await Component.InvokeAsync("SearchForm")
                 </div>
-                <div class="col-2 col-md-1 cart-btn">
-                    @await Component.InvokeAsync("CartBadge")
-                </div>
+                @if (User.IsInRole("admin") || User.IsInRole("pharmacist"))
+                {
+
+                }
+                else
+                {
+                    <div class="col-2 col-md-1 cart-btn">
+
+                        @await Component.InvokeAsync("CartBadge")
+
+                    </div>
+                }
             </div>
         </div>
     </div>
@@ -76,7 +85,7 @@
             </div>
             <hr />
             <p class="pull-left">&copy; @DateTime.Now.Year - Pharma Online</p>
-            <p class="pull-right">Powered by <a href="http://www.PharmaOnline.com"><strong>PharmaOnline</strong></a></p>
+            <p class="pull-right">Powered by <a href="/"><strong>PharmaOnline</strong></a></p>
         </div>
     </div>
     <div id="shopModal" class="modal fade" tabindex="-1" role="dialog">

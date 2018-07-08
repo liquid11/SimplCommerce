@@ -9,6 +9,7 @@ using Microsoft.Extensions.Logging;
 using SimplCommerce.Module.Core.ViewModels.Account;
 using SimplCommerce.Module.Core.Models;
 using SimplCommerce.Module.Core.Services;
+using Microsoft.AspNetCore.Http;
 
 namespace SimplCommerce.Module.Core.Controllers
 {
@@ -136,8 +137,13 @@ namespace SimplCommerce.Module.Core.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> LogOff()
         {
+            foreach (var cookie in Request.Cookies.Keys)
+            {
+                Response.Cookies.Delete(cookie);
+            }
             await _signInManager.SignOutAsync();
             _logger.LogInformation(4, "User logged out.");
+
             return RedirectToAction(nameof(HomeController.Index), "Home");
         }
 
@@ -449,7 +455,7 @@ namespace SimplCommerce.Module.Core.Controllers
             return View();
         }
 
-       #region Helpers
+        #region Helpers
 
         private void AddErrors(IdentityResult result)
         {

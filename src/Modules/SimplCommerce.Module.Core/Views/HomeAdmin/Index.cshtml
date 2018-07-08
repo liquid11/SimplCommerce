@@ -300,8 +300,8 @@
                             <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">@Localizer["Content"] <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a ui-sref="page">@Localizer["Pages"]</a></li>
-                                <li><a ui-sref="menus">@Localizer["Menus"]</a></li>
-                                <li><a ui-sref="widget">@Localizer["Widgets"]</a></li>
+                                @*<li><a ui-sref="menus">@Localizer["Menus"]</a></li>*@
+                                @*<li><a ui-sref="widget">@Localizer["Widgets"]</a></li>*@
                                 @*<li><a ui-sref="news-categories">Manage News Categories</a></li>
                                     <li><a ui-sref="news-items">Manage News Items</a></li>*@
                             </ul>
@@ -325,6 +325,9 @@
                 </ul>
                 <form asp-area="" asp-controller="Account" asp-action="LogOff" method="post" id="logoutForm" class="navbar-right">
                     <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="/" target="_blank">View frontend</a>
+                        </li>
                         <li>
                             <a asp-area="" asp-controller="Manage" asp-action="Index" title="Manage">@Localizer["Hello {0}!", (await WorkContext.GetCurrentUser()).FullName]</a>
                         </li>

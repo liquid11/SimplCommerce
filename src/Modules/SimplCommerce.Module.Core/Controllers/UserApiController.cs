@@ -35,6 +35,9 @@ namespace SimplCommerce.Module.Core.Controllers
                     .ThenInclude(x => x.CustomerGroup)
                 .Where(x => !x.IsDeleted);
 
+            long guestroleId = 3;
+            query = query.Where(x => x.Roles.Any(r => r.RoleId != guestroleId));
+
             if (param.Search.PredicateObject != null)
             {
                 dynamic search = param.Search.PredicateObject;
@@ -102,7 +105,7 @@ namespace SimplCommerce.Module.Core.Controllers
                 .Include(x => x.CustomerGroups)
                 .FirstOrDefaultAsync(x => x.Id == id);
 
-            if(user == null)
+            if (user == null)
             {
                 return NotFound();
             }
@@ -176,7 +179,7 @@ namespace SimplCommerce.Module.Core.Controllers
                     .Include(x => x.CustomerGroups)
                     .FirstOrDefaultAsync(x => x.Id == id);
 
-                if(user == null)
+                if (user == null)
                 {
                     return NotFound();
                 }

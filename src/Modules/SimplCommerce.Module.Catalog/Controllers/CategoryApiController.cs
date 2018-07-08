@@ -17,7 +17,8 @@ using SimplCommerce.Infrastructure.Web.SmartTable;
 
 namespace SimplCommerce.Module.Catalog.Controllers
 {
-    [Authorize(Roles = "admin, vendor")]
+    //[Authorize(Roles = "admin,vendor,pharmacist")]
+    [Authorize(Roles = "admin,pharmacist")]
     [Route("api/categories")]
     public class CategoryApiController : Controller
     {
@@ -64,7 +65,8 @@ namespace SimplCommerce.Module.Catalog.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = "admin")]
+        //[Authorize(Roles = "admin,vendor,pharmacist")]
+        [Authorize(Roles = "admin,pharmacist")]
         public async Task<IActionResult> Post(CategoryForm model)
         {
             if (ModelState.IsValid)
@@ -92,13 +94,14 @@ namespace SimplCommerce.Module.Catalog.Controllers
         }
 
         [HttpPut("{id}")]
-        [Authorize(Roles = "admin")]
+        //[Authorize(Roles = "admin,vendor,pharmacist")]
+        [Authorize(Roles = "admin,pharmacist")]
         public async Task<IActionResult> Put(long id, CategoryForm model)
         {
             if (ModelState.IsValid)
             {
                 var category = await _categoryRepository.Query().FirstOrDefaultAsync(x => x.Id == id);
-                if(category == null)
+                if (category == null)
                 {
                     return NotFound();
                 }
@@ -130,7 +133,8 @@ namespace SimplCommerce.Module.Catalog.Controllers
         }
 
         [HttpDelete("{id}")]
-        [Authorize(Roles = "admin")]
+        //[Authorize(Roles = "admin,vendor,pharmacist")]
+        [Authorize(Roles = "admin,pharmacist")]
         public async Task<IActionResult> Delete(long id)
         {
             var category = _categoryRepository.Query().Include(x => x.Children).FirstOrDefault(x => x.Id == id);
@@ -188,7 +192,7 @@ namespace SimplCommerce.Module.Catalog.Controllers
         public async Task<IActionResult> UpdateProduct(long id, [FromBody] ProductCategoryForm model)
         {
             var productCategory = await _productCategoryRepository.Query().FirstOrDefaultAsync(x => x.Id == id);
-            if(productCategory == null)
+            if (productCategory == null)
             {
                 return NotFound();
             }
@@ -230,7 +234,7 @@ namespace SimplCommerce.Module.Catalog.Controllers
             var parentCategoryId = category.ParentId;
             while (parentCategoryId.HasValue)
             {
-                if(parentCategoryId.Value == childId)
+                if (parentCategoryId.Value == childId)
                 {
                     return true;
                 }

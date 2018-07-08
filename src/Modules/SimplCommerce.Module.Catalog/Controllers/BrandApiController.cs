@@ -10,7 +10,8 @@ using SimplCommerce.Module.Catalog.ViewModels;
 
 namespace SimplCommerce.Module.Catalog.Controllers
 {
-    [Authorize(Roles = "admin, vendor")]
+    //[Authorize(Roles = "admin,vendor,pharmacist")]
+    [Authorize(Roles = "admin,pharmacist")]
     [Route("api/brands")]
     public class BrandApiController : Controller
     {
@@ -46,7 +47,8 @@ namespace SimplCommerce.Module.Catalog.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = "admin")]
+        //[Authorize(Roles = "admin,vendor,pharmacist")]
+        [Authorize(Roles = "admin,pharmacist")]
         public async Task<IActionResult> Post([FromBody] BrandForm model)
         {
             if (ModelState.IsValid)
@@ -65,13 +67,14 @@ namespace SimplCommerce.Module.Catalog.Controllers
         }
 
         [HttpPut("{id}")]
-        [Authorize(Roles = "admin")]
+        //[Authorize(Roles = "admin,vendor,pharmacist")]
+        [Authorize(Roles = "admin,pharmacist")]
         public async Task<IActionResult> Put(long id, [FromBody] BrandForm model)
         {
             if (ModelState.IsValid)
             {
                 var brand = _brandRepository.Query().FirstOrDefault(x => x.Id == id);
-                if(brand == null)
+                if (brand == null)
                 {
                     return NotFound();
                 }
@@ -88,7 +91,8 @@ namespace SimplCommerce.Module.Catalog.Controllers
         }
 
         [HttpDelete("{id}")]
-        [Authorize(Roles = "admin")]
+        //[Authorize(Roles = "admin,vendor,pharmacist")]
+        [Authorize(Roles = "admin,pharmacist")]
         public async Task<IActionResult> Delete(long id)
         {
             var brand = _brandRepository.Query().FirstOrDefault(x => x.Id == id);

@@ -12,7 +12,8 @@ using SimplCommerce.Module.Orders.ViewModels;
 
 namespace SimplCommerce.Module.Orders.Controllers
 {
-    [Authorize(Roles = "admin, vendor")]
+    //[Authorize(Roles = "admin,vendor,pharmacist")]
+    [Authorize(Roles = "admin,pharmacist")]
     [Route("api/invoices")]
     public class InvoiceApiController : Controller
     {

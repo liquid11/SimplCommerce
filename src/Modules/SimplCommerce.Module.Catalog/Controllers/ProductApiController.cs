@@ -21,7 +21,8 @@ using SimplCommerce.Module.Core.Extensions;
 
 namespace SimplCommerce.Module.Catalog.Controllers
 {
-    [Authorize(Roles = "admin, vendor")]
+    //[Authorize(Roles = "admin,vendor,pharmacist")]
+    [Authorize(Roles = "admin,pharmacist")]
     [Route("api/products")]
     public class ProductApiController : Controller
     {

@@ -11,7 +11,7 @@
 }
 
 @section head
-{
+    {
     <link simpl-append-version="true" rel="stylesheet" href="~/lib/smoothproducts/css/smoothproducts.css" />
     <link simpl-append-version="true" rel="stylesheet" href="~/modules/catalog/product-detail.css" />
 }
@@ -44,11 +44,11 @@
                 <h1 class="">@Model.Name</h1>
             </div>
             @*<ul class="list-inline product-ratings">
-                <li><input type="hidden" value="@Model.RatingAverage" readonly="readonly" class="rating-loading" step="1" data-size="xs" data-show-clear="false" data-show-caption="false" /></li>
-                <li class="product-review-list">
-                    <span>(@Model.ReviewsCount) <a href="#reviews">@Localizer["reviews"]</a> | <a href="#addreview"> @Localizer["Add Review"]</a></span>
-                </li>
-            </ul>*@
+                    <li><input type="hidden" value="@Model.RatingAverage" readonly="readonly" class="rating-loading" step="1" data-size="xs" data-show-clear="false" data-show-caption="false" /></li>
+                    <li class="product-review-list">
+                        <span>(@Model.ReviewsCount) <a href="#reviews">@Localizer["reviews"]</a> | <a href="#addreview"> @Localizer["Add Review"]</a></span>
+                    </li>
+                </ul>*@
             @*<div class="product-short-desc">@Html.Raw(Model.ShortDescription)</div>*@
             @if (Model.HasVariation)
             {
@@ -94,7 +94,7 @@
                         <div class="product-price">
                             @if (variant.IsCallForPricing)
                             {
-                                <span class="label label-info">@Localizer["Call for pricing"]</span>
+                                <span class="label label-info">@Localizer["Prescription required"]</span>
                             }
                             else
                             {
@@ -120,19 +120,19 @@
                                     <input type="text" class="quantity-field" readonly="readonly" name="qty" value="1">
                                     <button type="button" class="quantity-button" name="add" value="+">+</button>
                                 </div>
-                                <button type="button" disabled="@(!variant.IsAllowToOrder || variant.StockQuantity <= 0 || !User.IsInRole("vendor"))" class="btn btn-lg btn-add-cart">@Localizer["Add to cart"]</button>
+                                <button type="button" disabled="@(!variant.IsAllowToOrder || variant.StockQuantity <= 0 || User.IsInRole("pharmacist") || User.IsInRole("admin"))" class="btn btn-lg btn-add-cart">@Localizer["Add to cart"]</button>
                                 @*<div>
-                                    <ul class="list-inline add-to-wishlist">
-                                        <li class="wishlist-in">
-                                            <i class="fa fa-heart"></i>
-                                            <a href="#">Add to Wishlist</a>
-                                        </li>
-                                        <li class="compare-in">
-                                            <i class="fa fa-exchange"></i>
-                                            <a href="#" class="add-to-comparison">Add to Compare</a>
-                                        </li>
-                                    </ul>
-                                </div>*@
+                                        <ul class="list-inline add-to-wishlist">
+                                            <li class="wishlist-in">
+                                                <i class="fa fa-heart"></i>
+                                                <a href="#">Add to Wishlist</a>
+                                            </li>
+                                            <li class="compare-in">
+                                                <i class="fa fa-exchange"></i>
+                                                <a href="#" class="add-to-comparison">Add to Compare</a>
+                                            </li>
+                                        </ul>
+                                    </div>*@
                             </form>
                         </div>
                     </div>
@@ -146,7 +146,7 @@
                 <div class="product-price">
                     @if (Model.IsCallForPricing)
                     {
-                        <span class="label label-info">@Localizer["Call for pricing"]</span>
+                        <span class="label label-info">@Localizer["Prescription required"]</span>
                     }
                     else
                     {
@@ -172,19 +172,19 @@
                             <input type="text" class="quantity-field" readonly="readonly" name="qty" value="1">
                             <button type="button" class="quantity-button" name="add" value="+">+</button>
                         </div>
-                        <button type="button" disabled="@(!Model.IsAllowToOrder || Model.StockQuantity <= 0 || !User.IsInRole("pharmacist")))" class="btn btn-lg btn-add-cart">@Localizer["Add to cart"]</button>
+                        <button type="button" disabled="@(!Model.IsAllowToOrder || Model.StockQuantity <= 0 || User.IsInRole("pharmacist") ||User.IsInRole("admin"))" class="btn btn-lg btn-add-cart">@Localizer["Add to cart"]</button>
                         @*<div>
-                            <ul class="list-inline add-to-wishlist">
-                                <li class="wishlist-in">
-                                    <i class="fa fa-heart"></i>
-                                    <a href="#">Add to Wishlist</a>
-                                </li>
-                                <li class="compare-in">
-                                    <i class="fa fa-exchange"></i>
-                                    <a href="#" class="add-to-comparison">Add to Compare</a>
-                                </li>
-                            </ul>
-                        </div>*@
+                                <ul class="list-inline add-to-wishlist">
+                                    <li class="wishlist-in">
+                                        <i class="fa fa-heart"></i>
+                                        <a href="#">Add to Wishlist</a>
+                                    </li>
+                                    <li class="compare-in">
+                                        <i class="fa fa-exchange"></i>
+                                        <a href="#" class="add-to-comparison">Add to Compare</a>
+                                    </li>
+                                </ul>
+                            </div>*@
                     </form>
                 </div>
             }
@@ -198,41 +198,42 @@
         </div>
     }
 
-    @if (!string.IsNullOrWhiteSpace(Model.Specification))
-    {
-        <div>
-            <h3>@Localizer["Product specification"]</h3>
-            @Html.Raw(Model.Specification)
-        </div>
-    }
+    @*@if (!string.IsNullOrWhiteSpace(Model.Specification))
+        {
+            <div>
+                <h3>@Localizer["Product specification"]</h3>
+                @Html.Raw(Model.Specification)
+            </div>
+        }*@
+
     @if (Model.Attributes.Any())
     {
         @*<div>
-            <h3>@Localizer["Product specification"]</h3>
-            <table class="table table-striped">
-                @foreach (var attribute in Model.Attributes)
-                {
-                    <tr>
-                        <td>@attribute.Name</td>
-                        <td>@attribute.Value</td>
-                    </tr>
-                }
-            </table>
-        </div>*@
+                <h3>@Localizer["Product specification"]</h3>
+                <table class="table table-striped">
+                    @foreach (var attribute in Model.Attributes)
+                    {
+                        <tr>
+                            <td>@attribute.Name</td>
+                            <td>@attribute.Value</td>
+                        </tr>
+                    }
+                </table>
+            </div>*@
     }
 </div>
 
 @*@if (Model.RelatedProducts.Any()) {
-    <h2 class="page-header">Related Products</h2>
-    <div class="row product-list">
-        @foreach (var product in Model.RelatedProducts)
-        {
-            <div class="col-xs-6 col-md-3">
-                @await Html.PartialAsync("_ProductThumbnail", product)
-            </div>
-        }
-    </div>
-}*@
+        <h2 class="page-header">Related Products</h2>
+        <div class="row product-list">
+            @foreach (var product in Model.RelatedProducts)
+            {
+                <div class="col-xs-6 col-md-3">
+                    @await Html.PartialAsync("_ProductThumbnail", product)
+                </div>
+            }
+        </div>
+    }*@
 
 @if (Model.CrossSellProducts.Any())
 {
@@ -250,13 +251,13 @@
 @await Component.InvokeAsync("ProductRecentlyViewed", new { productId = Model.Id })
 
 @*<div>
-    <h3>@Localizer["Customer reviews"]</h3>
-    @await Component.InvokeAsync("Review", new { entityId = Model.Id, entityTypeId = "Product" })
-</div>*@
+        <h3>@Localizer["Customer reviews"]</h3>
+        @await Component.InvokeAsync("Review", new { entityId = Model.Id, entityTypeId = "Product" })
+    </div>*@
 
 
 @section scripts
-{
+    {
     @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
     <script simpl-append-version="true" src="~/lib/smoothproducts/js/smoothproducts.js"></script>
     <script simpl-append-version="true" src="~/modules/catalog/product-detail.js"></script>

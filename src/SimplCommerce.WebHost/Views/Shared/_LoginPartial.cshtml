@@ -4,8 +4,17 @@
 @inject IWorkContext WorkContext
 @inject SignInManager<User> SignInManager
 
+<li class="nav-item">
+    <a href="https://api.whatsapp.com/send?phone=0321901992" target="_blank" class="nav-link">
+        <img width="20" src="https://dawaai.pk/images/whatsapp-icon.png">
+        <span>Whatsapp Your Prescription</span>
+    </a>
+</li>
+
 @if (SignInManager.IsSignedIn(User))
 {
+
+
     <li class="nav-item">
         <a class="nav-link" asp-controller="Manage" asp-action="Index" title="@Localizer["Manage"]">@Localizer["Hello {0}!", (await WorkContext.GetCurrentUser()).FullName]</a>
     </li>
