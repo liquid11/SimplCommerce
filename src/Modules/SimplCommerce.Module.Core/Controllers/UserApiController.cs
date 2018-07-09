@@ -36,7 +36,7 @@ namespace SimplCommerce.Module.Core.Controllers
                 .Where(x => !x.IsDeleted);
 
             long guestroleId = 3;
-            query = query.Where(x => x.Roles.Any(r => r.RoleId != guestroleId));
+            query = query.Where(x => x.Roles.Any(r => r.RoleId != guestroleId)); 
 
             if (param.Search.PredicateObject != null)
             {
