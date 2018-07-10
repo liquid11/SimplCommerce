@@ -11,7 +11,7 @@ namespace SimplCommerce.Module.Core.Extensions
 {
     public class WorkContext : IWorkContext
     {
-        private const string UserGuidCookiesName = "SimplUserGuid";
+        private const string UserGuidCookiesName = "pharmaUserGuid";
         private const long GuestRoleId = 3;
 
         private User _currentUser;
@@ -53,7 +53,7 @@ namespace SimplCommerce.Module.Core.Extensions
             }
 
             userGuid = Guid.NewGuid();
-            var dummyEmail = string.Format("{0}@guest.simplcommerce.com", userGuid);
+            var dummyEmail = string.Format("{0}@guest.pharmaonline.com", userGuid);
             _currentUser = new User
             {
                 FullName = "Guest",
